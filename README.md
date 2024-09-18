@@ -1,4 +1,4 @@
-# Altium Project for for Solari Cifra 5 Clock
+# Altium Project for a USB Controlled Relay
 
 ## Follow the project on [Hackaday](https://hackaday.io/project/183679-solari-cifra-5-hack)
 
