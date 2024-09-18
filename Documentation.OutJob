@@ -1,0 +1,366 @@
+[OutputJobFile]
+Version=1.0
+Caption=
+Description=
+VaultGUID=
+ItemGUID=
+ItemHRID=
+RevisionGUID=
+RevisionId=
+VaultHRID=
+AutoItemHRID=
+NextRevId=
+FolderGUID=
+LifeCycleDefinitionGUID=
+RevisionNamingSchemeGUID=
+
+[OutputGroup1]
+Name=
+Description=
+TargetOutputMedium=Bill of Materials
+VariantName=[No Variations]
+VariantScope=1
+CurrentConfigurationName=Documentation
+TargetPrinter=Microsoft Print to PDF
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
+OutputMedium1=Print Job
+OutputMedium1_Type=Printer
+OutputMedium1_Printer=
+OutputMedium1_PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputMedium2=Drawings
+OutputMedium2_Type=Publish
+OutputMedium3=Schematics
+OutputMedium3_Type=Publish
+OutputMedium4=Files
+OutputMedium4_Type=GeneratedFiles
+OutputMedium5=Board 3D
+OutputMedium5_Type=Publish
+OutputMedium6=Bill of Materials
+OutputMedium6_Type=GeneratedFiles
+OutputType1=BOM_PartType
+OutputName1=BOM Complete
+OutputCategory1=Report
+OutputDocumentPath1=[ActiveBOM Document]
+OutputVariantName1=
+OutputEnabled1=1
+OutputEnabled1_OutputMedium1=0
+OutputEnabled1_OutputMedium2=0
+OutputEnabled1_OutputMedium3=0
+OutputEnabled1_OutputMedium4=0
+OutputEnabled1_OutputMedium5=0
+OutputEnabled1_OutputMedium6=1
+OutputDefault1=0
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration1_Name1=ColumnNameFormat
+Configuration1_Item1=CaptionAsName
+Configuration1_Name2=General
+Configuration1_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=C:\Users\Public\Documents\Altium\AD19\Templates\IT Logic - BOM.xltx|TemplateVaultGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1457|FormHeight=860|SupplierProdQty=100|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration1_Name3=GroupOrder
+Configuration1_Item3=Supplier 1=True|Manufacturer Part Number=True
+Configuration1_Name4=OutputConfigurationParameter1
+Configuration1_Item4=??
+Configuration1_Name5=SortOrder
+Configuration1_Item5=Line #=Up
+Configuration1_Name6=VisibleOrder
+Configuration1_Item6=Line #=100|Designator=100|Quantity=100|Description=100|Case=100|Mount=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Supplier Order Qty 1=91|Supplier Stock 1=91
+Configuration1_Name7=VisibleOrder_Base
+Configuration1_Item7=Line #=100|Designator=100|Quantity=100|Description=100|Case=100|Mount=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Supplier Order Qty 1=91|Supplier Stock 1=91
+Configuration1_Name8=VisibleOrder_Consolidated
+Configuration1_Item8=Line #=100|Comment=100|Description=100|Designator=100|Quantity=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Quantity@All Interfaces=100|Price@All Interfaces=100
+Configuration1_Name9=VisibleOrder_Flat
+Configuration1_Item9=Line #=100|Comment=100|Description=100|Designator=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100
+OutputType2=Schematic Print
+OutputName2=Schematic Prints
+OutputCategory2=Documentation
+OutputDocumentPath2=[Project Physical Documents]
+OutputVariantName2=
+OutputEnabled2=0
+OutputEnabled2_OutputMedium1=0
+OutputEnabled2_OutputMedium2=0
+OutputEnabled2_OutputMedium3=1
+OutputEnabled2_OutputMedium4=0
+OutputEnabled2_OutputMedium5=0
+OutputEnabled2_OutputMedium6=0
+OutputDefault2=0
+PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.12|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration2_Name1=OutputConfigurationParameter1
+Configuration2_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=True|ExpandPort=False|ExpandSheetNum=True|ExpandDocNum=True|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0
+OutputType3=ExportSTEP
+OutputName3=Board 3D
+OutputCategory3=Export
+OutputDocumentPath3=
+OutputVariantName3=
+OutputEnabled3=0
+OutputEnabled3_OutputMedium1=0
+OutputEnabled3_OutputMedium2=0
+OutputEnabled3_OutputMedium3=0
+OutputEnabled3_OutputMedium4=2
+OutputEnabled3_OutputMedium5=0
+OutputEnabled3_OutputMedium6=0
+OutputDefault3=0
+Configuration3_Name1=OutputConfigurationParameter1
+Configuration3_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=False|IncludeElectricalPadHoles=False|IncludeFreePadHoles=False|ExportFoldedBoard=True|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=1|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=False
+OutputType4=Design Rules Check
+OutputName4=Design Rules Check
+OutputCategory4=Validation
+OutputDocumentPath4=
+OutputVariantName4=
+OutputEnabled4=0
+OutputEnabled4_OutputMedium1=0
+OutputEnabled4_OutputMedium2=0
+OutputEnabled4_OutputMedium3=0
+OutputEnabled4_OutputMedium4=1
+OutputEnabled4_OutputMedium5=0
+OutputEnabled4_OutputMedium6=0
+OutputDefault4=0
+PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=1|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration4_Name1=OutputConfigurationParameter1
+Configuration4_Item1=?
+OutputType5=BOM_PartType
+OutputName5=BOM Basic
+OutputCategory5=Report
+OutputDocumentPath5=[ActiveBOM Document]
+OutputVariantName5=
+OutputEnabled5=1
+OutputEnabled5_OutputMedium1=0
+OutputEnabled5_OutputMedium2=0
+OutputEnabled5_OutputMedium3=0
+OutputEnabled5_OutputMedium4=0
+OutputEnabled5_OutputMedium5=0
+OutputEnabled5_OutputMedium6=2
+OutputDefault5=0
+PageOptions5=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration5_Name1=ColumnNameFormat
+Configuration5_Item1=CaptionAsName
+Configuration5_Name2=Filter
+Configuration5_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A2C00000001000000000100000000180000004D616E7566616374757265725F506172745F4E756D6265720112000000000000
+Configuration5_Name3=FilterString
+Configuration5_Item3=Not ([Manufacturer Part Number] = '')
+Configuration5_Name4=FilterString_Base
+Configuration5_Item4=Not ([Manufacturer Part Number] = '')
+Configuration5_Name5=General
+Configuration5_Item5=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateRevisionGuid=|BatchMode=2|FormWidth=1457|FormHeight=860|SupplierProdQty=10|SupplierAutoQty=False|SupplierUseCachedPricing=True|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration5_Name6=GroupOrder
+Configuration5_Item6=Supplier 1=True|Manufacturer Part Number=True
+Configuration5_Name7=OutputConfigurationParameter1
+Configuration5_Item7=??
+Configuration5_Name8=SortOrder
+Configuration5_Item8=Supplier 1=Up
+Configuration5_Name9=VisibleOrder
+Configuration5_Item9=Line #=100|Designator=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Quantity=100|Supplier 1=100|Supplier Part Number 1=100|Description=100
+Configuration5_Name10=VisibleOrder_Base
+Configuration5_Item10=Line #=100|Designator=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Quantity=100|Supplier 1=100|Supplier Part Number 1=100|Description=100
+Configuration5_Name11=VisibleOrder_Consolidated
+Configuration5_Item11=Line #=100|Comment=100|Description=100|Designator=100|Quantity=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Quantity@All Interfaces=100|Price@All Interfaces=100
+Configuration5_Name12=VisibleOrder_Flat
+Configuration5_Item12=Line #=100|Comment=100|Description=100|Designator=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100
+OutputType6=PCBDrawing
+OutputName6=Board Specifications
+OutputCategory6=Documentation
+OutputDocumentPath6=Board Specifications.PCBDwf
+OutputVariantName6=
+OutputEnabled6=0
+OutputEnabled6_OutputMedium1=0
+OutputEnabled6_OutputMedium2=1
+OutputEnabled6_OutputMedium3=0
+OutputEnabled6_OutputMedium4=0
+OutputEnabled6_OutputMedium5=0
+OutputEnabled6_OutputMedium6=0
+OutputDefault6=0
+PageOptions6=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType7=PCBDrawing
+OutputName7=Board Dimensions
+OutputCategory7=Documentation
+OutputDocumentPath7=Board Dimensions.PCBDwf
+OutputVariantName7=
+OutputEnabled7=0
+OutputEnabled7_OutputMedium1=0
+OutputEnabled7_OutputMedium2=2
+OutputEnabled7_OutputMedium3=0
+OutputEnabled7_OutputMedium4=0
+OutputEnabled7_OutputMedium5=0
+OutputEnabled7_OutputMedium6=0
+OutputDefault7=0
+PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType8=PCBDrawing
+OutputName8=Panel Dimensions
+OutputCategory8=Documentation
+OutputDocumentPath8=Panel Dimensions.PCBDwf
+OutputVariantName8=
+OutputEnabled8=0
+OutputEnabled8_OutputMedium1=0
+OutputEnabled8_OutputMedium2=3
+OutputEnabled8_OutputMedium3=0
+OutputEnabled8_OutputMedium4=0
+OutputEnabled8_OutputMedium5=0
+OutputEnabled8_OutputMedium6=0
+OutputDefault8=0
+PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType9=PCBDrawing
+OutputName9=Board Assembly
+OutputCategory9=Documentation
+OutputDocumentPath9=Board Assembly.PCBDwf
+OutputVariantName9=
+OutputEnabled9=0
+OutputEnabled9_OutputMedium1=0
+OutputEnabled9_OutputMedium2=4
+OutputEnabled9_OutputMedium3=0
+OutputEnabled9_OutputMedium4=0
+OutputEnabled9_OutputMedium5=0
+OutputEnabled9_OutputMedium6=0
+OutputDefault9=0
+PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType10=PDF3D
+OutputName10=Board 3D
+OutputCategory10=Documentation
+OutputDocumentPath10=
+OutputVariantName10=
+OutputEnabled10=0
+OutputEnabled10_OutputMedium1=0
+OutputEnabled10_OutputMedium2=0
+OutputEnabled10_OutputMedium3=0
+OutputEnabled10_OutputMedium4=0
+OutputEnabled10_OutputMedium5=1
+OutputEnabled10_OutputMedium6=0
+OutputDefault10=0
+PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration10_Name1=OutputConfigurationParameter1
+Configuration10_Item1=Record=ExportPDF3DSetting|Version=110|Format=0|Flags=8158|Scheme=0|ViewColorR0=255|ViewColorG0=255|ViewColorB0=255|ViewLignt0=9|ViewColorR1=255|ViewColorG1=255|ViewColorB1=255|ViewLignt1=9|ViewColorR2=255|ViewColorG2=255|ViewColorB2=255|ViewLignt2=9|ViewColorR3=255|ViewColorG3=255|ViewColorB3=255|ViewLignt3=9
+
+[PublishSettings]
+OutputFilePath2=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+ReleaseManaged2=1
+OutputBasePath2=
+OutputPathMedia2=
+OutputPathMediaValue2==ProjectCode
+OutputPathOutputer2=[Output Custom]
+OutputPathOutputerPrefix2=
+OutputPathOutputerValue2=Drawings
+OutputFileName2=AssemblyDrawing.pdf
+OutputFileNameMulti2=
+UseOutputNameForMulti2=1
+OutputFileNameSpecial2=
+OpenOutput2=0
+PromptOverwrite2=0
+PublishMethod2=1
+ZoomLevel2=50
+FitSCHPrintSizeToDoc2=0
+FitPCBPrintSizeToDoc2=0
+GenerateNetsInfo2=1
+MarkPins2=1
+MarkNetLabels2=1
+MarkPortsId2=1
+GenerateTOC2=1
+ShowComponentParameters2=1
+GlobalBookmarks2=0
+PDFACompliance2=Disabled
+PDFVersion2=Default
+OutputFilePath3=Z:\Projects\SuperCap UPS Ras Pi - 485 - Rev B\Outputs\
+ReleaseManaged3=1
+OutputBasePath3=
+OutputPathMedia3=
+OutputPathMediaValue3==ProjectCode
+OutputPathOutputer3=[Output Custom]
+OutputPathOutputerPrefix3=
+OutputPathOutputerValue3=Schematics
+OutputFileName3=AssemblyDrawing.pdf
+OutputFileNameMulti3=
+UseOutputNameForMulti3=1
+OutputFileNameSpecial3=
+OpenOutput3=0
+PromptOverwrite3=0
+PublishMethod3=1
+ZoomLevel3=50
+FitSCHPrintSizeToDoc3=0
+FitPCBPrintSizeToDoc3=0
+GenerateNetsInfo3=1
+MarkPins3=1
+MarkNetLabels3=1
+MarkPortsId3=1
+GenerateTOC3=1
+ShowComponentParameters3=1
+GlobalBookmarks3=0
+PDFACompliance3=Disabled
+PDFVersion3=Default
+OutputFilePath4=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+ReleaseManaged4=1
+OutputBasePath4=Outputs
+OutputPathMedia4=
+OutputPathMediaValue4==ProjectCode
+OutputPathOutputer4=[Output Name]
+OutputPathOutputerPrefix4=
+OutputPathOutputerValue4==ProjectCode
+OutputFileName4=
+OutputFileNameMulti4==OutputName
+UseOutputNameForMulti4=0
+OutputFileNameSpecial4=
+OpenOutput4=0
+OutputFilePath5=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+ReleaseManaged5=1
+OutputBasePath5=
+OutputPathMedia5=
+OutputPathMediaValue5==ProjectCode
+OutputPathOutputer5=[Output Custom]
+OutputPathOutputerPrefix5=
+OutputPathOutputerValue5=Board 3D
+OutputFileName5=LCD Zone Controller V2R1.PDF
+OutputFileNameMulti5==OutputName
+UseOutputNameForMulti5=1
+OutputFileNameSpecial5=
+OpenOutput5=0
+PromptOverwrite5=0
+PublishMethod5=1
+ZoomLevel5=50
+FitSCHPrintSizeToDoc5=1
+FitPCBPrintSizeToDoc5=1
+GenerateNetsInfo5=1
+MarkPins5=1
+MarkNetLabels5=1
+MarkPortsId5=1
+GenerateTOC5=1
+ShowComponentParameters5=1
+GlobalBookmarks5=0
+PDFACompliance5=Disabled
+PDFVersion5=Default
+OutputFilePath6=Z:\Projects\_Archive\Template\Outputs\
+ReleaseManaged6=1
+OutputBasePath6=Outputs
+OutputPathMedia6=
+OutputPathMediaValue6==ProjectCode
+OutputPathOutputer6=[Output Custom]
+OutputPathOutputerPrefix6=
+OutputPathOutputerValue6=Bill of Materials
+OutputFileName6=
+OutputFileNameMulti6==OutputName
+UseOutputNameForMulti6=0
+OutputFileNameSpecial6=
+OpenOutput6=0
+
+[GeneratedFilesSettings]
+RelativeOutputPath2=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+OpenOutputs2=0
+RelativeOutputPath3=Z:\Projects\SuperCap UPS Ras Pi - 485 - Rev B\Outputs\
+OpenOutputs3=0
+RelativeOutputPath4=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+OpenOutputs4=0
+AddToProject4=0
+TimestampFolder4=0
+UseOutputName4=0
+OpenODBOutput4=0
+OpenGerberOutput4=0
+OpenNCDrillOutput4=0
+OpenIPCOutput4=0
+EnableReload4=0
+RelativeOutputPath5=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+OpenOutputs5=0
+RelativeOutputPath6=Z:\Projects\_Archive\Template\Outputs\
+OpenOutputs6=0
+AddToProject6=0
+TimestampFolder6=0
+UseOutputName6=0
+OpenODBOutput6=0
+OpenGerberOutput6=0
+OpenNCDrillOutput6=0
+OpenIPCOutput6=0
+EnableReload6=0
+
