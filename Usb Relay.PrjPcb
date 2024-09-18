@@ -123,23 +123,6 @@ GenerateClassCluster=0
 DocumentUniqueId=TUKDLXMP
 
 [Document5]
-DocumentPath=Block Diagram.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=3
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=CLQHRLKK
-
-[Document6]
 DocumentPath=Board Specifications.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IPEHHAPV
 
-[Document7]
+[Document6]
 DocumentPath=Board Dimensions.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -171,9 +154,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KJFVJYBO
 
-[Document8]
+[Document7]
 DocumentPath=Panel Dimensions.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -188,9 +171,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=VPUUUXMD
 
-[Document9]
+[Document8]
 DocumentPath=Board Assembly.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -205,9 +188,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GUEITGZH
 
-[Document10]
+[Document9]
 DocumentPath=PANEL.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -224,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HVMDXXAH
 
-[Document11]
+[Document10]
 DocumentPath=USB-SW.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -240,6 +223,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HWDAFQTD
+
+[Document11]
+DocumentPath=Main Diagram.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=3
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=CLQHRLKK
 
 [Document12]
 DocumentPath=Cover Page.SchDoc
