@@ -9,7 +9,7 @@ OpenOutputs=1
 ArchiveProject=0
 TimestampOutput=0
 SeparateFolders=1
-TemplateLocationPath=C:\Users\Public\Documents\Altium\AD24\Templates\
+TemplateLocationPath=
 PinSwapBy_Netlabel=1
 PinSwapBy_Pin=1
 AllowPortNetNames=0
@@ -123,6 +123,23 @@ GenerateClassCluster=0
 DocumentUniqueId=TUKDLXMP
 
 [Document5]
+DocumentPath=Main Schematics.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=3
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=CLQHRLKK
+
+[Document6]
 DocumentPath=Board Specifications.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -139,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IPEHHAPV
 
-[Document6]
+[Document7]
 DocumentPath=Board Dimensions.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,7 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KJFVJYBO
 
-[Document7]
+[Document8]
 DocumentPath=Panel Dimensions.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +190,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VPUUUXMD
 
-[Document8]
+[Document9]
 DocumentPath=Board Assembly.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GUEITGZH
 
-[Document9]
+[Document10]
 DocumentPath=PANEL.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +224,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HVMDXXAH
 
-[Document10]
+[Document11]
 DocumentPath=USB-SW.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -223,23 +240,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HWDAFQTD
-
-[Document11]
-DocumentPath=Main Diagram.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=3
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=CLQHRLKK
 
 [Document12]
 DocumentPath=Cover Page.SchDoc
