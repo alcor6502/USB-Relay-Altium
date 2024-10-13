@@ -276,24 +276,24 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Parameter1]
-Name=VersionRevision
-Value=A
+Name=ProjectAuthor
+Value=Alfredo Cortellini
 
 [Parameter2]
-Name=ReleaseDate
-Value=Oct-01-2024
+Name=ProjectCode
+Value=USB-SW-A
 
 [Parameter3]
 Name=ProjectTitle
 Value=USB controlled Relay
 
 [Parameter4]
-Name=ProjectCode
-Value=USB-SW-A
+Name=ReleaseDate
+Value=Oct-01-2024
 
 [Parameter5]
-Name=ProjectAuthor
-Value=Alfredo Cortellini
+Name=VersionRevision
+Value=A
 
 [Configuration1]
 Name=Sources
