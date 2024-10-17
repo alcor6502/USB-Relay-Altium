@@ -51,7 +51,7 @@ PrefsRevisionGUID=
 
 [Release]
 ReleaseTarget=1
-ReleaseFolderPath=Z:\Projects\_Archive\Template
+ReleaseFolderPath=C:\Users\alfredo\Documents\Altium Projects\USB Relay
 ReleaseZipPath=Z:\Projects\LCD Zone Controller V2R1
 
 [Document1]
