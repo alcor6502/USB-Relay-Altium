@@ -15,11 +15,11 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=
+Name=Documentation.OutJob
 Description=
 TargetOutputMedium=Bill of Materials
 VariantName=[No Variations]
-VariantScope=1
+VariantScope=2
 CurrentConfigurationName=Documentation
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
@@ -54,7 +54,7 @@ PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 Configuration1_Name1=ColumnNameFormat
 Configuration1_Item1=CaptionAsName
 Configuration1_Name2=General
-Configuration1_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=C:\Users\Public\Documents\Altium\AD19\Templates\IT Logic - BOM.xltx|TemplateVaultGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1457|FormHeight=860|SupplierProdQty=100|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration1_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=C:\Users\Public\Documents\Altium\AD24\Templates\IT Logic - CC BY-NC-SA - BOM.xlt|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1457|FormHeight=860|SupplierProdQty=100|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
 Configuration1_Name3=GroupOrder
 Configuration1_Item3=Supplier 1=True|Manufacturer Part Number=True
 Configuration1_Name4=OutputConfigurationParameter1
@@ -139,7 +139,7 @@ Configuration5_Item3=Not ([Manufacturer Part Number] = '')
 Configuration5_Name4=FilterString_Base
 Configuration5_Item4=Not ([Manufacturer Part Number] = '')
 Configuration5_Name5=General
-Configuration5_Item5=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateRevisionGuid=|BatchMode=2|FormWidth=1457|FormHeight=860|SupplierProdQty=10|SupplierAutoQty=False|SupplierUseCachedPricing=True|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration5_Item5=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=1|FormWidth=1457|FormHeight=860|SupplierProdQty=10|SupplierAutoQty=False|SupplierUseCachedPricing=True|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
 Configuration5_Name6=GroupOrder
 Configuration5_Item6=Supplier 1=True|Manufacturer Part Number=True
 Configuration5_Name7=OutputConfigurationParameter1
@@ -284,7 +284,7 @@ PDFACompliance3=Disabled
 PDFVersion3=Default
 OutputFilePath4=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
 ReleaseManaged4=1
-OutputBasePath4=Outputs
+OutputBasePath4=
 OutputPathMedia4=
 OutputPathMediaValue4==ProjectCode
 OutputPathOutputer4=[Output Name]
@@ -324,7 +324,7 @@ PDFACompliance5=Disabled
 PDFVersion5=Default
 OutputFilePath6=Z:\Projects\_Archive\Template\Outputs\
 ReleaseManaged6=1
-OutputBasePath6=Outputs
+OutputBasePath6=
 OutputPathMedia6=
 OutputPathMediaValue6==ProjectCode
 OutputPathOutputer6=[Output Custom]
