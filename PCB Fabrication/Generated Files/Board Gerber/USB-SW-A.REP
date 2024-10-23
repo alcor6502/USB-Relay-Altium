@@ -11,8 +11,8 @@ Generating : Bottom Layer
 
 
 Used DCodes :
-    D21
     D22
+    D23
     D24
     D25
     D26
@@ -65,7 +65,7 @@ Generating : Top Overlay
 
 
 Used DCodes :
-    D22
+    D23
     D33
     D34
     D35
@@ -137,6 +137,7 @@ Generating : Bottom Overlay
 
 Used DCodes :
     D35
+    D57
 *************************************************************
 
 *************************************************************
@@ -147,7 +148,7 @@ Generating : Panel Outline
 
 
 Used DCodes :
-    D22
+    D21
     D23
     D30
     D34
