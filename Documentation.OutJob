@@ -103,7 +103,7 @@ Configuration3_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModels
 OutputType4=Design Rules Check
 OutputName4=Design Rules Check
 OutputCategory4=Validation
-OutputDocumentPath4=
+OutputDocumentPath4=USB-SW.PcbDoc
 OutputVariantName4=
 OutputEnabled4=0
 OutputEnabled4_OutputMedium1=0
