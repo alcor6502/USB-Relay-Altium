@@ -2,35 +2,10 @@
 FileName = USB-SW-A.GBR
 AutoAperture = True
 *************************************************************
-Generating : Bottom Layer
-      File : USB-SW-A.GBL
+Generating : Top Overlay
+      File : USB-SW-A.GTO
 
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-*************************************************************
-
-*************************************************************
-Generating : Top Layer
-      File : USB-SW-A.GTL
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Top Overlay
 
 
 Used DCodes :
@@ -38,6 +13,20 @@ Used DCodes :
     D11
     D12
     D13
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : USB-SW-A.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
     D14
     D15
     D16
@@ -55,27 +44,80 @@ Used DCodes :
     D28
     D29
     D30
+    D31
 *************************************************************
 
 *************************************************************
-Generating : Top Overlay
-      File : USB-SW-A.GTO
+Generating : Bottom Overlay
+      File : USB-SW-A.GBO
 
-    Adding Layer      : Top Overlay
+    Adding Layer      : Bottom Overlay
 
 
 Used DCodes :
-    D23
-    D33
-    D34
-    D35
+    D13
+    D54
 *************************************************************
 
 *************************************************************
-Generating : Top Solder
-      File : USB-SW-A.GTS
+Generating : Bottom Layer
+      File : USB-SW-A.GBL
 
-    Adding Layer      : Top Solder
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+*************************************************************
+
+*************************************************************
+Generating : Board Shape
+      File : USB-SW-A.GM1
+
+    Adding Layer      : Board Shape
+
+
+Used DCodes :
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : USB-SW-A.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D53
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : USB-SW-A.GTL
 
     Adding Layer      : Top Layer
 
@@ -83,6 +125,11 @@ Generating : Top Solder
 
 
 Used DCodes :
+    D10
+    D32
+    D33
+    D34
+    D35
     D36
     D37
     D38
@@ -98,59 +145,5 @@ Used DCodes :
     D48
     D49
     D50
-    D51
-    D52
-    D53
-    D54
-    D55
-*************************************************************
-
-*************************************************************
-Generating : Bottom Solder
-      File : USB-SW-A.GBS
-
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D48
-    D49
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : USB-SW-A.GBO
-
-    Adding Layer      : Bottom Overlay
-
-
-Used DCodes :
-    D35
-    D57
-*************************************************************
-
-*************************************************************
-Generating : Panel Outline
-      File : USB-SW-A.GM2
-
-    Adding Layer      : Panel Outline
-
-
-Used DCodes :
-    D21
-    D23
-    D30
-    D34
 *************************************************************
 

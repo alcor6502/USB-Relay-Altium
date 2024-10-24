@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: PANEL.PcbDoc   23/10/2024  18:13:40
+NCDrill File Report For: USB-SW.PcbDoc   24/10/2024  17:12:47
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -9,13 +9,12 @@ EIA File   : USB-SW-A.DRL
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      12mil (0.3mm)                                             Round             130       PTH        26.98inch (685.38mm)
-T2      28mil (0.7mm)                                             Round             40        PTH        16.06inch (407.92mm)
-T3      39mil (1mm)                                               Round             120       PTH        26.10inch (662.84mm)
-T4      39mil (1mm)                                               Slot              20        PTH        24.35inch (618.47mm)
-T5      43mil (1.1mm)                                             Round             20        NPTH       11.40inch (289.50mm)
-T6      79mil (2mm)                                               Round             4         NPTH       10.33inch (262.34mm)
+T1      12mil (0.3mm)                                             Round             12        PTH        1.79inch (45.50mm)
+T2      28mil (0.7mm)                                             Round             4         PTH        0.72inch (18.38mm)
+T3      39mil (1mm)                                               Round             12        PTH        1.94inch (49.32mm)
+T4      39mil (1mm)                                               Slot              2         PTH        1.01inch (25.69mm)
+T5      43mil (1.1mm)                                             Round             2         NPTH       0.18inch (4.50mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              334
+Totals                                                                              32
 
 Total Processing Time (hh:mm:ss) : 00:00:00

@@ -4,8 +4,8 @@ C:\Users\alfredo\AppData\Local\TempReleases\Snapshot\1\Assembly\USB-SW-A\Pick an
 ========================================================================================================================
 File Design Information:
 
-Date:       23/10/24
-Time:       18:13
+Date:       24/10/24
+Time:       17:12
 Revision:   Not in VersionControl
 Variant:    No variations
 Units used: mm
@@ -38,8 +38,6 @@ LD2        LTST-C191KGKT    TopLayer    LED-0603-G     31.4000      7.6000      
 LD1        LTST-C191KRKT    TopLayer    LED-0603-R     30.0000      7.6000       270      "LED 0603 Top Red 631nm 2-Pin"                                                            
 K1         G6L-1P-DC5       TopLayer    G6L-1P         12.8000      12.5000      0        "Relay Low Signal Sealed SPST-NO 1A 5VDC Through Hole Tube"                               
 J2         S4B-XH-A(LF)(SN) TopLayer    JST_S4B-XH-A   7.7000       12.5000      270      "Conn Shrouded, Series JST XH, 4 Pos Header,(2.50mm) Through Hole, Right Angle Tin"       
-FID2       "Local Fiducial" TopLayer    FID-1-2MM      37.9000      12.5000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
-FID1       "Local Fiducial" TopLayer    FID-1-2MM      3.1000       18.4000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
 D1         USBLC6-4SC6      TopLayer    SOT-236        31.4000      11.8000      0        "ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6"             
 C3         1µF              TopLayer    C0603-H90      29.0000      15.4000      270      "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
 C4         1µF              TopLayer    C0603-H90      31.5000      17.9000      0        "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
@@ -67,8 +65,6 @@ LD2        LTST-C191KGKT    TopLayer    LED-0603-G     31.4000      22.6000     
 LD1        LTST-C191KRKT    TopLayer    LED-0603-R     30.0000      22.6000      270      "LED 0603 Top Red 631nm 2-Pin"                                                            
 K1         G6L-1P-DC5       TopLayer    G6L-1P         12.8000      27.5000      0        "Relay Low Signal Sealed SPST-NO 1A 5VDC Through Hole Tube"                               
 J2         S4B-XH-A(LF)(SN) TopLayer    JST_S4B-XH-A   7.7000       27.5000      270      "Conn Shrouded, Series JST XH, 4 Pos Header,(2.50mm) Through Hole, Right Angle Tin"       
-FID2       "Local Fiducial" TopLayer    FID-1-2MM      37.9000      27.5000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
-FID1       "Local Fiducial" TopLayer    FID-1-2MM      3.1000       33.4000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
 D1         USBLC6-4SC6      TopLayer    SOT-236        31.4000      26.8000      0        "ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6"             
 C3         1µF              TopLayer    C0603-H90      29.0000      30.4000      270      "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
 C4         1µF              TopLayer    C0603-H90      31.5000      32.9000      0        "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
@@ -96,8 +92,6 @@ LD2        LTST-C191KGKT    TopLayer    LED-0603-G     31.4000      37.6000     
 LD1        LTST-C191KRKT    TopLayer    LED-0603-R     30.0000      37.6000      270      "LED 0603 Top Red 631nm 2-Pin"                                                            
 K1         G6L-1P-DC5       TopLayer    G6L-1P         12.8000      42.5000      0        "Relay Low Signal Sealed SPST-NO 1A 5VDC Through Hole Tube"                               
 J2         S4B-XH-A(LF)(SN) TopLayer    JST_S4B-XH-A   7.7000       42.5000      270      "Conn Shrouded, Series JST XH, 4 Pos Header,(2.50mm) Through Hole, Right Angle Tin"       
-FID2       "Local Fiducial" TopLayer    FID-1-2MM      37.9000      42.5000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
-FID1       "Local Fiducial" TopLayer    FID-1-2MM      3.1000       48.4000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
 D1         USBLC6-4SC6      TopLayer    SOT-236        31.4000      41.8000      0        "ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6"             
 C3         1µF              TopLayer    C0603-H90      29.0000      45.4000      270      "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
 C4         1µF              TopLayer    C0603-H90      31.5000      47.9000      0        "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
@@ -125,8 +119,6 @@ LD2        LTST-C191KGKT    TopLayer    LED-0603-G     31.4000      52.6000     
 LD1        LTST-C191KRKT    TopLayer    LED-0603-R     30.0000      52.6000      270      "LED 0603 Top Red 631nm 2-Pin"                                                            
 K1         G6L-1P-DC5       TopLayer    G6L-1P         12.8000      57.5000      0        "Relay Low Signal Sealed SPST-NO 1A 5VDC Through Hole Tube"                               
 J2         S4B-XH-A(LF)(SN) TopLayer    JST_S4B-XH-A   7.7000       57.5000      270      "Conn Shrouded, Series JST XH, 4 Pos Header,(2.50mm) Through Hole, Right Angle Tin"       
-FID2       "Local Fiducial" TopLayer    FID-1-2MM      37.9000      57.5000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
-FID1       "Local Fiducial" TopLayer    FID-1-2MM      3.1000       63.4000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
 D1         USBLC6-4SC6      TopLayer    SOT-236        31.4000      56.8000      0        "ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6"             
 C3         1µF              TopLayer    C0603-H90      29.0000      60.4000      270      "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
 C4         1µF              TopLayer    C0603-H90      31.5000      62.9000      0        "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
@@ -154,8 +146,6 @@ LD2        LTST-C191KGKT    TopLayer    LED-0603-G     31.4000      67.6000     
 LD1        LTST-C191KRKT    TopLayer    LED-0603-R     30.0000      67.6000      270      "LED 0603 Top Red 631nm 2-Pin"                                                            
 K1         G6L-1P-DC5       TopLayer    G6L-1P         12.8000      72.5000      0        "Relay Low Signal Sealed SPST-NO 1A 5VDC Through Hole Tube"                               
 J2         S4B-XH-A(LF)(SN) TopLayer    JST_S4B-XH-A   7.7000       72.5000      270      "Conn Shrouded, Series JST XH, 4 Pos Header,(2.50mm) Through Hole, Right Angle Tin"       
-FID2       "Local Fiducial" TopLayer    FID-1-2MM      37.9000      72.5000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
-FID1       "Local Fiducial" TopLayer    FID-1-2MM      3.1000       78.4000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
 D1         USBLC6-4SC6      TopLayer    SOT-236        31.4000      71.8000      0        "ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6"             
 C3         1µF              TopLayer    C0603-H90      29.0000      75.4000      270      "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
 C4         1µF              TopLayer    C0603-H90      31.5000      77.9000      0        "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
@@ -183,8 +173,6 @@ LD2        LTST-C191KGKT    TopLayer    LED-0603-G     73.4000      7.6000      
 LD1        LTST-C191KRKT    TopLayer    LED-0603-R     72.0000      7.6000       270      "LED 0603 Top Red 631nm 2-Pin"                                                            
 K1         G6L-1P-DC5       TopLayer    G6L-1P         54.8000      12.5000      0        "Relay Low Signal Sealed SPST-NO 1A 5VDC Through Hole Tube"                               
 J2         S4B-XH-A(LF)(SN) TopLayer    JST_S4B-XH-A   49.7000      12.5000      270      "Conn Shrouded, Series JST XH, 4 Pos Header,(2.50mm) Through Hole, Right Angle Tin"       
-FID2       "Local Fiducial" TopLayer    FID-1-2MM      79.9000      12.5000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
-FID1       "Local Fiducial" TopLayer    FID-1-2MM      45.1000      18.4000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
 D1         USBLC6-4SC6      TopLayer    SOT-236        73.4000      11.8000      0        "ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6"             
 C3         1µF              TopLayer    C0603-H90      71.0000      15.4000      270      "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
 C4         1µF              TopLayer    C0603-H90      73.5000      17.9000      0        "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
@@ -212,8 +200,6 @@ LD2        LTST-C191KGKT    TopLayer    LED-0603-G     73.4000      22.6000     
 LD1        LTST-C191KRKT    TopLayer    LED-0603-R     72.0000      22.6000      270      "LED 0603 Top Red 631nm 2-Pin"                                                            
 K1         G6L-1P-DC5       TopLayer    G6L-1P         54.8000      27.5000      0        "Relay Low Signal Sealed SPST-NO 1A 5VDC Through Hole Tube"                               
 J2         S4B-XH-A(LF)(SN) TopLayer    JST_S4B-XH-A   49.7000      27.5000      270      "Conn Shrouded, Series JST XH, 4 Pos Header,(2.50mm) Through Hole, Right Angle Tin"       
-FID2       "Local Fiducial" TopLayer    FID-1-2MM      79.9000      27.5000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
-FID1       "Local Fiducial" TopLayer    FID-1-2MM      45.1000      33.4000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
 D1         USBLC6-4SC6      TopLayer    SOT-236        73.4000      26.8000      0        "ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6"             
 C3         1µF              TopLayer    C0603-H90      71.0000      30.4000      270      "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
 C4         1µF              TopLayer    C0603-H90      73.5000      32.9000      0        "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
@@ -241,8 +227,6 @@ LD2        LTST-C191KGKT    TopLayer    LED-0603-G     73.4000      37.6000     
 LD1        LTST-C191KRKT    TopLayer    LED-0603-R     72.0000      37.6000      270      "LED 0603 Top Red 631nm 2-Pin"                                                            
 K1         G6L-1P-DC5       TopLayer    G6L-1P         54.8000      42.5000      0        "Relay Low Signal Sealed SPST-NO 1A 5VDC Through Hole Tube"                               
 J2         S4B-XH-A(LF)(SN) TopLayer    JST_S4B-XH-A   49.7000      42.5000      270      "Conn Shrouded, Series JST XH, 4 Pos Header,(2.50mm) Through Hole, Right Angle Tin"       
-FID2       "Local Fiducial" TopLayer    FID-1-2MM      79.9000      42.5000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
-FID1       "Local Fiducial" TopLayer    FID-1-2MM      45.1000      48.4000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
 D1         USBLC6-4SC6      TopLayer    SOT-236        73.4000      41.8000      0        "ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6"             
 C3         1µF              TopLayer    C0603-H90      71.0000      45.4000      270      "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
 C4         1µF              TopLayer    C0603-H90      73.5000      47.9000      0        "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
@@ -270,8 +254,6 @@ LD2        LTST-C191KGKT    TopLayer    LED-0603-G     73.4000      52.6000     
 LD1        LTST-C191KRKT    TopLayer    LED-0603-R     72.0000      52.6000      270      "LED 0603 Top Red 631nm 2-Pin"                                                            
 K1         G6L-1P-DC5       TopLayer    G6L-1P         54.8000      57.5000      0        "Relay Low Signal Sealed SPST-NO 1A 5VDC Through Hole Tube"                               
 J2         S4B-XH-A(LF)(SN) TopLayer    JST_S4B-XH-A   49.7000      57.5000      270      "Conn Shrouded, Series JST XH, 4 Pos Header,(2.50mm) Through Hole, Right Angle Tin"       
-FID2       "Local Fiducial" TopLayer    FID-1-2MM      79.9000      57.5000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
-FID1       "Local Fiducial" TopLayer    FID-1-2MM      45.1000      63.4000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
 D1         USBLC6-4SC6      TopLayer    SOT-236        73.4000      56.8000      0        "ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6"             
 C3         1µF              TopLayer    C0603-H90      71.0000      60.4000      270      "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
 C4         1µF              TopLayer    C0603-H90      73.5000      62.9000      0        "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
@@ -299,8 +281,6 @@ LD2        LTST-C191KGKT    TopLayer    LED-0603-G     73.4000      67.6000     
 LD1        LTST-C191KRKT    TopLayer    LED-0603-R     72.0000      67.6000      270      "LED 0603 Top Red 631nm 2-Pin"                                                            
 K1         G6L-1P-DC5       TopLayer    G6L-1P         54.8000      72.5000      0        "Relay Low Signal Sealed SPST-NO 1A 5VDC Through Hole Tube"                               
 J2         S4B-XH-A(LF)(SN) TopLayer    JST_S4B-XH-A   49.7000      72.5000      270      "Conn Shrouded, Series JST XH, 4 Pos Header,(2.50mm) Through Hole, Right Angle Tin"       
-FID2       "Local Fiducial" TopLayer    FID-1-2MM      79.9000      72.5000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
-FID1       "Local Fiducial" TopLayer    FID-1-2MM      45.1000      78.4000      90       "Fiducial 1.0mm Diameter, 2.0mmil Mask"                                                   
 D1         USBLC6-4SC6      TopLayer    SOT-236        73.4000      71.8000      0        "ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6"             
 C3         1µF              TopLayer    C0603-H90      71.0000      75.4000      270      "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
 C4         1µF              TopLayer    C0603-H90      73.5000      77.9000      0        "Cap 0603 Case Ceramic 1uF 16V X7R"                                                       
