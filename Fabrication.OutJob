@@ -15,11 +15,11 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=Fabrication.OutJob
+Name=
 Description=
-TargetOutputMedium=Fabricator
+TargetOutputMedium=Generated
 VariantName=[No Variations]
-VariantScope=1
+VariantScope=2
 CurrentConfigurationName=Fabrication
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
@@ -36,7 +36,7 @@ OutputName1=Board Gerber
 OutputCategory1=Fabrication
 OutputDocumentPath1=USB-SW.PcbDoc
 OutputVariantName1=
-OutputEnabled1=0
+OutputEnabled1=1
 OutputEnabled1_OutputMedium1=0
 OutputEnabled1_OutputMedium2=1
 OutputEnabled1_OutputMedium3=0
@@ -48,7 +48,7 @@ OutputName2=Stencil Gerber
 OutputCategory2=Fabrication
 OutputDocumentPath2=USB-SW.PcbDoc
 OutputVariantName2=
-OutputEnabled2=0
+OutputEnabled2=1
 OutputEnabled2_OutputMedium1=0
 OutputEnabled2_OutputMedium2=2
 OutputEnabled2_OutputMedium3=0
@@ -60,7 +60,7 @@ OutputName3=Board NC Drill
 OutputCategory3=Fabrication
 OutputDocumentPath3=USB-SW.PcbDoc
 OutputVariantName3=
-OutputEnabled3=0
+OutputEnabled3=1
 OutputEnabled3_OutputMedium1=0
 OutputEnabled3_OutputMedium2=3
 OutputEnabled3_OutputMedium3=0
@@ -72,7 +72,7 @@ OutputName4=Fabricator Files
 OutputCategory4=PostProcess
 OutputDocumentPath4=
 OutputVariantName4=
-OutputEnabled4=1
+OutputEnabled4=0
 OutputEnabled4_OutputMedium1=0
 OutputEnabled4_OutputMedium2=0
 OutputEnabled4_OutputMedium3=1
@@ -81,11 +81,11 @@ Configuration4_Name1=OutputConfigurationParameter1
 Configuration4_Item1=Count=2|File0=[Release Managed]\*.G*|File1=[Release Managed]\*.TXT|KeepStructure0=True|KeepStructure1=True|Record=NonNativeFiles
 
 [PublishSettings]
-OutputFilePath2=Z:\Projects\_Archive\Template\Outputs\Generated Files\
+OutputFilePath2=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\#NAME_\
 ReleaseManaged2=1
 OutputBasePath2=Outputs
-OutputPathMedia2=Generated Files
-OutputPathMediaValue2=Generated Files
+OutputPathMedia2==ProjectCode+' Gen Files'
+OutputPathMediaValue2==ProjectCode+' Gen Files'
 OutputPathOutputer2=[Output Name]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
@@ -96,7 +96,7 @@ OutputFileNameSpecial2=
 OpenOutput2=0
 OutputFilePath3=Z:\Projects\Tension Control Board Rel B\Outputs\_Fabricator Files\
 ReleaseManaged3=1
-OutputBasePath3=Outputs
+OutputBasePath3=
 OutputPathMedia3=
 OutputPathMediaValue3=_Fabricator Files
 OutputPathOutputer3=[Output Custom]
@@ -109,7 +109,7 @@ OutputFileNameSpecial3=
 OpenOutput3=0
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=Z:\Projects\_Archive\Template\Outputs\Generated Files\
+RelativeOutputPath2=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\#NAME_\
 OpenOutputs2=0
 AddToProject2=0
 TimestampFolder2=0

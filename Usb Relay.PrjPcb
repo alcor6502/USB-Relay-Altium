@@ -306,7 +306,7 @@ Value=USB controlled Relay
 
 [Parameter4]
 Name=ProjectCode
-Value=USB-SW-.VersionRevision
+Value=USB-SW-B
 
 [Parameter5]
 Name=ProjectAuthor
