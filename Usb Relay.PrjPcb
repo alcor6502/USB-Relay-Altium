@@ -275,25 +275,42 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document14]
+DocumentPath=USB Relay.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [Parameter1]
-Name=ProjectAuthor
-Value=Alfredo Cortellini
+Name=VersionRevision
+Value=B
 
 [Parameter2]
-Name=ProjectCode
-Value=USB-SW-A
+Name=ReleaseDate
+Value=Feb-10-2025
 
 [Parameter3]
 Name=ProjectTitle
 Value=USB controlled Relay
 
 [Parameter4]
-Name=ReleaseDate
-Value=Oct-01-2024
+Name=ProjectCode
+Value=USB-SW-.VersionRevision
 
 [Parameter5]
-Name=VersionRevision
-Value=A
+Name=ProjectAuthor
+Value=Alfredo Cortellini
 
 [Configuration1]
 Name=Sources
@@ -1531,7 +1548,7 @@ L16=WWWWNWWNWWWNWWWNW
 L17=WNNNNNNNWNNNWWWWN
 
 [Annotate]
-SortOrder=3
+SortOrder=1
 SortLocation=0
 ReplaceSubparts=0
 MatchParameter1=Comment
