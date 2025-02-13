@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=Documentation.OutJob
+Name=Job Group
 Description=
 TargetOutputMedium=Bill of Materials
 VariantName=[No Variations]
@@ -37,57 +37,40 @@ OutputMedium5=Board 3D
 OutputMedium5_Type=Publish
 OutputMedium6=Bill of Materials
 OutputMedium6_Type=GeneratedFiles
-OutputType1=BOM_PartType
-OutputName1=BOM Complete
-OutputCategory1=Report
-OutputDocumentPath1=[ActiveBOM Document]
+OutputType1=Schematic Print
+OutputName1=Schematics
+OutputCategory1=Documentation
+OutputDocumentPath1=[Project Physical Documents]
 OutputVariantName1=
-OutputEnabled1=1
+OutputEnabled1=0
 OutputEnabled1_OutputMedium1=0
 OutputEnabled1_OutputMedium2=0
-OutputEnabled1_OutputMedium3=0
+OutputEnabled1_OutputMedium3=1
 OutputEnabled1_OutputMedium4=0
 OutputEnabled1_OutputMedium5=0
-OutputEnabled1_OutputMedium6=1
+OutputEnabled1_OutputMedium6=0
 OutputDefault1=0
-PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-Configuration1_Name1=ColumnNameFormat
-Configuration1_Item1=CaptionAsName
-Configuration1_Name2=General
-Configuration1_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=C:\Users\Public\Documents\Altium\AD24\Templates\IT Logic - CC BY-NC-SA - BOM.xlt|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1457|FormHeight=860|SupplierProdQty=100|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
-Configuration1_Name3=GroupOrder
-Configuration1_Item3=Supplier 1=True|Manufacturer Part Number=True
-Configuration1_Name4=OutputConfigurationParameter1
-Configuration1_Item4=??
-Configuration1_Name5=SortOrder
-Configuration1_Item5=Line #=Up
-Configuration1_Name6=VisibleOrder
-Configuration1_Item6=Line #=100|Designator=100|Quantity=100|Description=100|Case=100|Mount=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Supplier Order Qty 1=91|Supplier Stock 1=91
-Configuration1_Name7=VisibleOrder_Base
-Configuration1_Item7=Line #=100|Designator=100|Quantity=100|Description=100|Case=100|Mount=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Supplier Order Qty 1=91|Supplier Stock 1=91
-Configuration1_Name8=VisibleOrder_Consolidated
-Configuration1_Item8=Line #=100|Comment=100|Description=100|Designator=100|Quantity=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Quantity@All Interfaces=100|Price@All Interfaces=100
-Configuration1_Name9=VisibleOrder_Flat
-Configuration1_Item9=Line #=100|Comment=100|Description=100|Designator=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100
-OutputType2=Schematic Print
-OutputName2=Schematic Prints
-OutputCategory2=Documentation
-OutputDocumentPath2=[Project Physical Documents]
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.12|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration1_Name1=OutputConfigurationParameter1
+Configuration1_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=True|ExpandPort=False|ExpandSheetNum=True|ExpandDocNum=True|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0|DocumentPath=[Project Physical Documents]
+OutputType2=ExportSTEP
+OutputName2=Board 3D
+OutputCategory2=Export
+OutputDocumentPath2=USB-SW.PcbDoc
 OutputVariantName2=
 OutputEnabled2=0
 OutputEnabled2_OutputMedium1=0
 OutputEnabled2_OutputMedium2=0
-OutputEnabled2_OutputMedium3=1
-OutputEnabled2_OutputMedium4=0
+OutputEnabled2_OutputMedium3=0
+OutputEnabled2_OutputMedium4=1
 OutputEnabled2_OutputMedium5=0
 OutputEnabled2_OutputMedium6=0
 OutputDefault2=0
-PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.12|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 Configuration2_Name1=OutputConfigurationParameter1
-Configuration2_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=True|ExpandPort=False|ExpandSheetNum=True|ExpandDocNum=True|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0|DocumentPath=[Project Physical Documents]
-OutputType3=ExportSTEP
-OutputName3=Board 3D
-OutputCategory3=Export
+Configuration2_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=False|IncludeElectricalPadHoles=False|IncludeFreePadHoles=False|ExportFoldedBoard=True|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=1|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=False|DocumentPath=C:\Users\alfredo\Documents\Altium Projects\USB Relay\USB-SW.PcbDoc
+OutputType3=Design Rules Check
+OutputName3=Design Rules Check
+OutputCategory3=Validation
 OutputDocumentPath3=USB-SW.PcbDoc
 OutputVariantName3=
 OutputEnabled3=0
@@ -98,70 +81,45 @@ OutputEnabled3_OutputMedium4=2
 OutputEnabled3_OutputMedium5=0
 OutputEnabled3_OutputMedium6=0
 OutputDefault3=0
+PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=1|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 Configuration3_Name1=OutputConfigurationParameter1
-Configuration3_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=False|IncludeElectricalPadHoles=False|IncludeFreePadHoles=False|ExportFoldedBoard=True|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=1|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=False
-OutputType4=Design Rules Check
-OutputName4=Design Rules Check
-OutputCategory4=Validation
-OutputDocumentPath4=USB-SW.PcbDoc
+Configuration3_Item1=?
+OutputType4=PCBDrawing
+OutputName4=Board Specifications
+OutputCategory4=Documentation
+OutputDocumentPath4=Board Specifications.PCBDwf
 OutputVariantName4=
 OutputEnabled4=0
 OutputEnabled4_OutputMedium1=0
-OutputEnabled4_OutputMedium2=0
+OutputEnabled4_OutputMedium2=1
 OutputEnabled4_OutputMedium3=0
-OutputEnabled4_OutputMedium4=1
+OutputEnabled4_OutputMedium4=0
 OutputEnabled4_OutputMedium5=0
 OutputEnabled4_OutputMedium6=0
 OutputDefault4=0
-PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=1|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-Configuration4_Name1=OutputConfigurationParameter1
-Configuration4_Item1=?
-OutputType5=BOM_PartType
-OutputName5=BOM Basic
-OutputCategory5=Report
-OutputDocumentPath5=[ActiveBOM Document]
+PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType5=PCBDrawing
+OutputName5=Board Assembly
+OutputCategory5=Documentation
+OutputDocumentPath5=Board Assembly.PCBDwf
 OutputVariantName5=
-OutputEnabled5=1
+OutputEnabled5=0
 OutputEnabled5_OutputMedium1=0
-OutputEnabled5_OutputMedium2=0
+OutputEnabled5_OutputMedium2=4
 OutputEnabled5_OutputMedium3=0
 OutputEnabled5_OutputMedium4=0
 OutputEnabled5_OutputMedium5=0
-OutputEnabled5_OutputMedium6=2
+OutputEnabled5_OutputMedium6=0
 OutputDefault5=0
-PageOptions5=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-Configuration5_Name1=ColumnNameFormat
-Configuration5_Item1=CaptionAsName
-Configuration5_Name2=Filter
-Configuration5_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A2C00000001000000000100000000180000004D616E7566616374757265725F506172745F4E756D6265720112000000000000
-Configuration5_Name3=FilterString
-Configuration5_Item3=Not ([Manufacturer Part Number] = '')
-Configuration5_Name4=FilterString_Base
-Configuration5_Item4=Not ([Manufacturer Part Number] = '')
-Configuration5_Name5=General
-Configuration5_Item5=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=1|FormWidth=1457|FormHeight=860|SupplierProdQty=10|SupplierAutoQty=False|SupplierUseCachedPricing=True|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
-Configuration5_Name6=GroupOrder
-Configuration5_Item6=Supplier 1=True|Manufacturer Part Number=True
-Configuration5_Name7=OutputConfigurationParameter1
-Configuration5_Item7=??
-Configuration5_Name8=SortOrder
-Configuration5_Item8=Supplier 1=Up
-Configuration5_Name9=VisibleOrder
-Configuration5_Item9=Line #=100|Designator=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Quantity=100|Supplier 1=100|Supplier Part Number 1=100|Description=100
-Configuration5_Name10=VisibleOrder_Base
-Configuration5_Item10=Line #=100|Designator=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Quantity=100|Supplier 1=100|Supplier Part Number 1=100|Description=100
-Configuration5_Name11=VisibleOrder_Consolidated
-Configuration5_Item11=Line #=100|Comment=100|Description=100|Designator=100|Quantity=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Quantity@All Interfaces=100|Price@All Interfaces=100
-Configuration5_Name12=VisibleOrder_Flat
-Configuration5_Item12=Line #=100|Comment=100|Description=100|Designator=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100
+PageOptions5=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 OutputType6=PCBDrawing
-OutputName6=Board Specifications
+OutputName6=Board Dimensions
 OutputCategory6=Documentation
-OutputDocumentPath6=Board Specifications.PCBDwf
+OutputDocumentPath6=Board Dimensions.PCBDwf
 OutputVariantName6=
 OutputEnabled6=0
 OutputEnabled6_OutputMedium1=0
-OutputEnabled6_OutputMedium2=1
+OutputEnabled6_OutputMedium2=2
 OutputEnabled6_OutputMedium3=0
 OutputEnabled6_OutputMedium4=0
 OutputEnabled6_OutputMedium5=0
@@ -169,80 +127,84 @@ OutputEnabled6_OutputMedium6=0
 OutputDefault6=0
 PageOptions6=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 OutputType7=PCBDrawing
-OutputName7=Board Dimensions
+OutputName7=Panel Dimensions
 OutputCategory7=Documentation
-OutputDocumentPath7=Board Dimensions.PCBDwf
+OutputDocumentPath7=Panel Dimensions.PCBDwf
 OutputVariantName7=
 OutputEnabled7=0
 OutputEnabled7_OutputMedium1=0
-OutputEnabled7_OutputMedium2=2
+OutputEnabled7_OutputMedium2=3
 OutputEnabled7_OutputMedium3=0
 OutputEnabled7_OutputMedium4=0
 OutputEnabled7_OutputMedium5=0
 OutputEnabled7_OutputMedium6=0
 OutputDefault7=0
 PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-OutputType8=PCBDrawing
-OutputName8=Panel Dimensions
+OutputType8=PDF3D
+OutputName8=Board 3D
 OutputCategory8=Documentation
-OutputDocumentPath8=Panel Dimensions.PCBDwf
+OutputDocumentPath8=USB-SW.PcbDoc
 OutputVariantName8=
 OutputEnabled8=0
 OutputEnabled8_OutputMedium1=0
-OutputEnabled8_OutputMedium2=3
+OutputEnabled8_OutputMedium2=0
 OutputEnabled8_OutputMedium3=0
 OutputEnabled8_OutputMedium4=0
-OutputEnabled8_OutputMedium5=0
+OutputEnabled8_OutputMedium5=1
 OutputEnabled8_OutputMedium6=0
 OutputDefault8=0
 PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-OutputType9=PCBDrawing
-OutputName9=Board Assembly
-OutputCategory9=Documentation
-OutputDocumentPath9=Board Assembly.PCBDwf
+Configuration8_Name1=OutputConfigurationParameter1
+Configuration8_Item1=Record=ExportPDF3DSetting|Version=110|Format=0|Flags=8158|Scheme=0|ViewColorR0=255|ViewColorG0=255|ViewColorB0=255|ViewLignt0=9|ViewColorR1=255|ViewColorG1=255|ViewColorB1=255|ViewLignt1=9|ViewColorR2=255|ViewColorG2=255|ViewColorB2=255|ViewLignt2=9|ViewColorR3=255|ViewColorG3=255|ViewColorB3=255|ViewLignt3=9
+OutputType9=BOM_PartType
+OutputName9=BOM Complete
+OutputCategory9=Report
+OutputDocumentPath9=[ActiveBOM Document]
 OutputVariantName9=
-OutputEnabled9=0
+OutputEnabled9=1
 OutputEnabled9_OutputMedium1=0
-OutputEnabled9_OutputMedium2=4
+OutputEnabled9_OutputMedium2=0
 OutputEnabled9_OutputMedium3=0
 OutputEnabled9_OutputMedium4=0
 OutputEnabled9_OutputMedium5=0
-OutputEnabled9_OutputMedium6=0
+OutputEnabled9_OutputMedium6=1
 OutputDefault9=0
-PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-OutputType10=PDF3D
-OutputName10=Board 3D
-OutputCategory10=Documentation
-OutputDocumentPath10=USB-SW.PcbDoc
-OutputVariantName10=
-OutputEnabled10=0
-OutputEnabled10_OutputMedium1=0
-OutputEnabled10_OutputMedium2=0
-OutputEnabled10_OutputMedium3=0
-OutputEnabled10_OutputMedium4=0
-OutputEnabled10_OutputMedium5=1
-OutputEnabled10_OutputMedium6=0
-OutputDefault10=0
-PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-Configuration10_Name1=OutputConfigurationParameter1
-Configuration10_Item1=Record=ExportPDF3DSetting|Version=110|Format=0|Flags=8158|Scheme=0|ViewColorR0=255|ViewColorG0=255|ViewColorB0=255|ViewLignt0=9|ViewColorR1=255|ViewColorG1=255|ViewColorB1=255|ViewLignt1=9|ViewColorR2=255|ViewColorG2=255|ViewColorB2=255|ViewLignt2=9|ViewColorR3=255|ViewColorG3=255|ViewColorB3=255|ViewLignt3=9
+PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration9_Name1=ColumnNameFormat
+Configuration9_Item1=CaptionAsName
+Configuration9_Name2=General
+Configuration9_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=C:\Users\Public\Documents\Altium\AD24\Templates\IT Logic - CC BY-NC-SA - BOM.xlt|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1457|FormHeight=860|SupplierProdQty=10|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration9_Name3=GroupOrder
+Configuration9_Item3=Supplier 1=True|Manufacturer Part Number=True
+Configuration9_Name4=OutputConfigurationParameter1
+Configuration9_Item4=??
+Configuration9_Name5=SortOrder
+Configuration9_Item5=Line #=Up
+Configuration9_Name6=VisibleOrder
+Configuration9_Item6=Line #=100|Designator=100|Quantity=100|Description=100|Case=100|Mount=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Supplier Order Qty 1=91|Supplier Stock 1=91
+Configuration9_Name7=VisibleOrder_Base
+Configuration9_Item7=Line #=100|Designator=100|Quantity=100|Description=100|Case=100|Mount=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Supplier Order Qty 1=91|Supplier Stock 1=91
+Configuration9_Name8=VisibleOrder_Consolidated
+Configuration9_Item8=Line #=100|Comment=100|Description=100|Designator=100|Quantity=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Quantity@All Interfaces=100|Price@All Interfaces=100
+Configuration9_Name9=VisibleOrder_Flat
+Configuration9_Item9=Line #=100|Comment=100|Description=100|Designator=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100
 
 [PublishSettings]
-OutputFilePath2=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+OutputFilePath2=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 ReleaseManaged2=1
 OutputBasePath2=
-OutputPathMedia2=
+OutputPathMedia2==ProjectCode
 OutputPathMediaValue2==ProjectCode
 OutputPathOutputer2=[Output Custom]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=Drawings
-OutputFileName2=AssemblyDrawing.pdf
+OutputFileName2=Drawings.pdf
 OutputFileNameMulti2=
-UseOutputNameForMulti2=1
+UseOutputNameForMulti2=0
 OutputFileNameSpecial2=
 OpenOutput2=0
 PromptOverwrite2=0
-PublishMethod2=1
+PublishMethod2=0
 ZoomLevel2=50
 FitSCHPrintSizeToDoc2=0
 FitPCBPrintSizeToDoc2=0
@@ -255,12 +217,12 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=Z:\Projects\SuperCap UPS Ras Pi - 485 - Rev B\Outputs\
+OutputFilePath3=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 ReleaseManaged3=1
 OutputBasePath3=
-OutputPathMedia3=
+OutputPathMedia3==ProjectCode
 OutputPathMediaValue3==ProjectCode
-OutputPathOutputer3=[Output Custom]
+OutputPathOutputer3=
 OutputPathOutputerPrefix3=
 OutputPathOutputerValue3=Schematics
 OutputFileName3=AssemblyDrawing.pdf
@@ -282,12 +244,12 @@ ShowComponentParameters3=1
 GlobalBookmarks3=0
 PDFACompliance3=Disabled
 PDFVersion3=Default
-OutputFilePath4=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+OutputFilePath4=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 ReleaseManaged4=1
 OutputBasePath4=
-OutputPathMedia4=
+OutputPathMedia4==ProjectCode
 OutputPathMediaValue4==ProjectCode
-OutputPathOutputer4=[Output Name]
+OutputPathOutputer4=
 OutputPathOutputerPrefix4=
 OutputPathOutputerValue4==ProjectCode
 OutputFileName4=
@@ -295,12 +257,12 @@ OutputFileNameMulti4==OutputName
 UseOutputNameForMulti4=0
 OutputFileNameSpecial4=
 OpenOutput4=0
-OutputFilePath5=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+OutputFilePath5=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 ReleaseManaged5=1
 OutputBasePath5=
-OutputPathMedia5=
+OutputPathMedia5==ProjectCode
 OutputPathMediaValue5==ProjectCode
-OutputPathOutputer5=[Output Custom]
+OutputPathOutputer5=
 OutputPathOutputerPrefix5=
 OutputPathOutputerValue5=Board 3D
 OutputFileName5=LCD Zone Controller V2R1.PDF
@@ -322,12 +284,12 @@ ShowComponentParameters5=1
 GlobalBookmarks5=0
 PDFACompliance5=Disabled
 PDFVersion5=Default
-OutputFilePath6=Z:\Projects\_Archive\Template\Outputs\
+OutputFilePath6=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 ReleaseManaged6=1
 OutputBasePath6=
-OutputPathMedia6=
+OutputPathMedia6==ProjectCode
 OutputPathMediaValue6==ProjectCode
-OutputPathOutputer6=[Output Custom]
+OutputPathOutputer6=
 OutputPathOutputerPrefix6=
 OutputPathOutputerValue6=Bill of Materials
 OutputFileName6=
@@ -337,11 +299,11 @@ OutputFileNameSpecial6=
 OpenOutput6=0
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+RelativeOutputPath2=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 OpenOutputs2=0
-RelativeOutputPath3=Z:\Projects\SuperCap UPS Ras Pi - 485 - Rev B\Outputs\
+RelativeOutputPath3=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 OpenOutputs3=0
-RelativeOutputPath4=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+RelativeOutputPath4=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 OpenOutputs4=0
 AddToProject4=0
 TimestampFolder4=0
@@ -351,9 +313,9 @@ OpenGerberOutput4=0
 OpenNCDrillOutput4=0
 OpenIPCOutput4=0
 EnableReload4=0
-RelativeOutputPath5=Z:\Projects\PWM Zone Control Box V2R1\Outputs\
+RelativeOutputPath5=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 OpenOutputs5=0
-RelativeOutputPath6=Z:\Projects\_Archive\Template\Outputs\
+RelativeOutputPath6=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 OpenOutputs6=0
 AddToProject6=0
 TimestampFolder6=0
