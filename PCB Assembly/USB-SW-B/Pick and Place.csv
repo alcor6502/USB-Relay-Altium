@@ -1,0 +1,31 @@
+Altium Designer Pick and Place Locations
+C:\Users\alfredo\AppData\Local\TempReleases\Snapshot\7\Assembly\USB-SW-B\Pick and Place.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       14/02/25
+Time:       15:08
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description","Mount"
+"C1","100nF","TopLayer","C0603-H90","25.1000","12.9000","180","Cap 0603 Case Ceramic 100nF 50V X7R","Surface Mount"
+"C2","1µF","TopLayer","C0603-H90","22.1000","12.9000","0","Cap 0603 Case Ceramic 1uF 16V X7R","Surface Mount"
+"C3","1µF","TopLayer","C0603-H90","32.0000","12.9000","0","Cap 0603 Case Ceramic 1uF 16V X7R","Surface Mount"
+"C4","1µF","TopLayer","C0603-H90","29.5000","10.4000","270","Cap 0603 Case Ceramic 1uF 16V X7R","Surface Mount"
+"D1","MBR0530T1G","TopLayer","SOD-323","18.8000","12.4000","0","Diode Schottky 30V 0.5A 2-Pin SOD-123","Surface Mount"
+"D2","MBR0530T1G","TopLayer","SOD-323","18.8000","2.6000","0","Diode Schottky 30V 0.5A 2-Pin SOD-123","Surface Mount"
+"D3","USBLC6-4SC6","TopLayer","SOT-236","31.9000","6.8000","0","ESD Protection Diodes / TVS Diodes 2 Line 2.5pF USB 2.0 ESD Protect SOT23-6","Surface Mount"
+"LD1","LTST-C191KRKT","TopLayer","LED-0603-R","30.5000","2.6000","270","LED 0603 Top Red 631nm 2-Pin","Surface Mount"
+"LD2","LTST-C191KGKT","TopLayer","LED-0603-G","31.9000","2.6000","270","LED 0603 Top Green 571nm 2-Pin","Surface Mount"
+"Q1","BSS138K-13","TopLayer","SOT-23","23.8000","2.6000","270","Mosfet N 50V Vds 20V Vgs ESD 1.4R SOT-23","Surface Mount"
+"R1","10KO","TopLayer","R0603-H55","21.3000","2.6000","270","Resistor 0603 Case 10KR 1% 1/10W","Surface Mount"
+"R2","470O","TopLayer","R0603-H55","26.3000","2.6000","90","Resistor 0603 Case 470R 1% 1/10W","Surface Mount"
+"R4","10KO","TopLayer","R0603-H55","27.7000","2.6000","90","Resistor 0603 Case 10KR 1% 1/10W","Surface Mount"
+"R5","470O","TopLayer","R0603-H55","29.1000","2.6000","270","Resistor 0603 Case 470R 1% 1/10W","Surface Mount"
+"R6","470O","TopLayer","R0603-H55","33.3000","2.6000","270","Resistor 0603 Case 470R 1% 1/10W","Surface Mount"
+"R7","10KO","TopLayer","R0603-H55","28.5000","12.9000","180","Resistor 0603 Case 10KR 1% 1/10W","Surface Mount"
+"U1","STM32F070F6P6","TopLayer","TSSOP-20","25.1000","8.3000","90","STM32 Arm Cortex-M0 MCU 32 Kbytes of Flash 48 MHz CPU, USB","Surface Mount"
+"U2","AP7313-33SRG-7","TopLayer","SOT-23","32.1000","10.4000","0","LDO 3.3V 150mA Out  6Vin 130mV Dropout, Quiescent current 65uA Startup 80µs SOT-23","Surface Mount"
