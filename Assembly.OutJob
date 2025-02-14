@@ -34,7 +34,7 @@ OutputMedium3_Type=GeneratedFiles
 OutputType1=PDF3D
 OutputName1=Board 3D
 OutputCategory1=Documentation
-OutputDocumentPath1=USB-SW.PcbDoc
+OutputDocumentPath1=Board.PcbDoc
 OutputVariantName1=
 OutputEnabled1=0
 OutputEnabled1_OutputMedium1=0
@@ -58,7 +58,7 @@ PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 OutputType3=Pick Place
 OutputName3=Pick and Place
 OutputCategory3=Assembly
-OutputDocumentPath3=USB-SW.PcbDoc
+OutputDocumentPath3=Board.PcbDoc
 OutputVariantName3=All Interfaces
 OutputEnabled3=1
 OutputEnabled3_OutputMedium1=0
@@ -81,7 +81,7 @@ PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 Configuration4_Name1=ColumnNameFormat
 Configuration4_Item1=CaptionAsName
 Configuration4_Name2=General
-Configuration4_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=True|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=1|FormWidth=1457|FormHeight=860|SupplierProdQty=10|SupplierAutoQty=False|SupplierUseCachedPricing=True|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration4_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=True|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=2|FormWidth=1457|FormHeight=860|SupplierProdQty=10|SupplierAutoQty=False|SupplierUseCachedPricing=True|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
 Configuration4_Name3=GroupOrder
 Configuration4_Item3=Supplier 1=True|Manufacturer Part Number=True
 Configuration4_Name4=OutputConfigurationParameter1

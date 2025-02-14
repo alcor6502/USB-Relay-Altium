@@ -208,7 +208,7 @@ GenerateClassCluster=0
 DocumentUniqueId=GUEITGZH
 
 [Document10]
-DocumentPath=PANEL.PcbDoc
+DocumentPath=Panel.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -225,7 +225,7 @@ GenerateClassCluster=0
 DocumentUniqueId=HVMDXXAH
 
 [Document11]
-DocumentPath=USB-SW.PcbDoc
+DocumentPath=Board.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0

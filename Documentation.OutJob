@@ -56,7 +56,7 @@ Configuration1_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowPr
 OutputType2=ExportSTEP
 OutputName2=Board 3D
 OutputCategory2=Export
-OutputDocumentPath2=USB-SW.PcbDoc
+OutputDocumentPath2=Board.PcbDoc
 OutputVariantName2=
 OutputEnabled2=0
 OutputEnabled2_OutputMedium1=0
@@ -71,7 +71,7 @@ Configuration2_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModels
 OutputType3=Design Rules Check
 OutputName3=Design Rules Check
 OutputCategory3=Validation
-OutputDocumentPath3=USB-SW.PcbDoc
+OutputDocumentPath3=Board.PcbDoc
 OutputVariantName3=
 OutputEnabled3=0
 OutputEnabled3_OutputMedium1=0
@@ -143,7 +143,7 @@ PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 OutputType8=PDF3D
 OutputName8=Board 3D
 OutputCategory8=Documentation
-OutputDocumentPath8=USB-SW.PcbDoc
+OutputDocumentPath8=Board.PcbDoc
 OutputVariantName8=
 OutputEnabled8=0
 OutputEnabled8_OutputMedium1=0
