@@ -17,11 +17,11 @@ RevisionNamingSchemeGUID=
 [OutputGroup1]
 Name=Job Group
 Description=
-TargetOutputMedium=Bill of Materials
+TargetOutputMedium=Drawings
 VariantName=[No Variations]
-VariantScope=2
+VariantScope=1
 CurrentConfigurationName=Documentation
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -89,7 +89,7 @@ OutputName4=Board Specifications
 OutputCategory4=Documentation
 OutputDocumentPath4=Board Specifications.PCBDwf
 OutputVariantName4=
-OutputEnabled4=0
+OutputEnabled4=1
 OutputEnabled4_OutputMedium1=0
 OutputEnabled4_OutputMedium2=1
 OutputEnabled4_OutputMedium3=0
@@ -103,7 +103,7 @@ OutputName5=Board Assembly
 OutputCategory5=Documentation
 OutputDocumentPath5=Board Assembly.PCBDwf
 OutputVariantName5=
-OutputEnabled5=0
+OutputEnabled5=1
 OutputEnabled5_OutputMedium1=0
 OutputEnabled5_OutputMedium2=4
 OutputEnabled5_OutputMedium3=0
@@ -117,7 +117,7 @@ OutputName6=Board Dimensions
 OutputCategory6=Documentation
 OutputDocumentPath6=Board Dimensions.PCBDwf
 OutputVariantName6=
-OutputEnabled6=0
+OutputEnabled6=1
 OutputEnabled6_OutputMedium1=0
 OutputEnabled6_OutputMedium2=2
 OutputEnabled6_OutputMedium3=0
@@ -131,7 +131,7 @@ OutputName7=Panel Dimensions
 OutputCategory7=Documentation
 OutputDocumentPath7=Panel Dimensions.PCBDwf
 OutputVariantName7=
-OutputEnabled7=0
+OutputEnabled7=1
 OutputEnabled7_OutputMedium1=0
 OutputEnabled7_OutputMedium2=3
 OutputEnabled7_OutputMedium3=0
@@ -161,7 +161,7 @@ OutputName9=BOM Complete
 OutputCategory9=Report
 OutputDocumentPath9=[ActiveBOM Document]
 OutputVariantName9=
-OutputEnabled9=1
+OutputEnabled9=0
 OutputEnabled9_OutputMedium1=0
 OutputEnabled9_OutputMedium2=0
 OutputEnabled9_OutputMedium3=0
@@ -190,7 +190,7 @@ Configuration9_Name9=VisibleOrder_Flat
 Configuration9_Item9=Line #=100|Comment=100|Description=100|Designator=100|Manufacturer 1=100|Manufacturer Part Number 1=100|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100
 
 [PublishSettings]
-OutputFilePath2=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
+OutputFilePath2=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\Drawings.pdf
 ReleaseManaged2=1
 OutputBasePath2=
 OutputPathMedia2==ProjectCode
@@ -246,7 +246,7 @@ PDFACompliance3=Disabled
 PDFVersion3=Default
 OutputFilePath4=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 ReleaseManaged4=1
-OutputBasePath4=
+OutputBasePath4=Outputs
 OutputPathMedia4==ProjectCode
 OutputPathMediaValue4==ProjectCode
 OutputPathOutputer4=
@@ -286,7 +286,7 @@ PDFACompliance5=Disabled
 PDFVersion5=Default
 OutputFilePath6=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 ReleaseManaged6=1
-OutputBasePath6=
+OutputBasePath6=Outputs
 OutputPathMedia6==ProjectCode
 OutputPathMediaValue6==ProjectCode
 OutputPathOutputer6=
@@ -299,7 +299,7 @@ OutputFileNameSpecial6=
 OpenOutput6=0
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
+RelativeOutputPath2=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\Drawings.pdf
 OpenOutputs2=0
 RelativeOutputPath3=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 OpenOutputs3=0
