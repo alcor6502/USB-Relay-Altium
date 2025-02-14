@@ -302,7 +302,7 @@ Value=Feb-10-2025
 
 [Parameter3]
 Name=ProjectTitle
-Value=USB controlled Relay
+Value=USB Controlled Relay
 
 [Parameter4]
 Name=ProjectCode

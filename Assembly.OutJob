@@ -89,9 +89,9 @@ Configuration4_Item4=??
 Configuration4_Name5=SortOrder
 Configuration4_Item5=Line #=Up
 Configuration4_Name6=VisibleOrder
-Configuration4_Item6=Line #=100|Designator=100|Manufacturer Part Number 1=176|Quantity=100|Description=367|Manufacturer 1=100|Supplier 1=100
+Configuration4_Item6=Line #=100|Designator=100|Manufacturer Part Number 1=176|Quantity=100|Description=367|Manufacturer 1=100|Supplier 1=100|Mount=100
 Configuration4_Name7=VisibleOrder_Base
-Configuration4_Item7=Line #=100|Designator=100|Manufacturer Part Number 1=176|Quantity=100|Description=367|Manufacturer 1=100|Supplier 1=100
+Configuration4_Item7=Line #=100|Designator=100|Manufacturer Part Number 1=176|Quantity=100|Description=367|Manufacturer 1=100|Supplier 1=100|Mount=100
 Configuration4_Name8=VisibleOrder_Consolidated
 Configuration4_Item8=Line #=100|Comment=100|Description=367|Designator=100|Manufacturer 1=100|Quantity=100|Manufacturer Part Number 1=145|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Quantity@All Interfaces=100|Price@All Interfaces=100
 Configuration4_Name9=VisibleOrder_Flat

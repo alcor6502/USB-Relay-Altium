@@ -15,12 +15,12 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=Job Group
+Name=Documentation.OutJob
 Description=
 TargetOutputMedium=Drawings
 VariantName=[No Variations]
 VariantScope=1
-CurrentConfigurationName=Documentation
+CurrentConfigurationName=
 TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
 OutputMedium1=Print Job
@@ -50,7 +50,7 @@ OutputEnabled1_OutputMedium4=0
 OutputEnabled1_OutputMedium5=0
 OutputEnabled1_OutputMedium6=0
 OutputDefault1=0
-PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.12|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.12|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PrintScaleName=PrintFitPageWidth|PaperKind=Letter|PaperIndex=1
 Configuration1_Name1=OutputConfigurationParameter1
 Configuration1_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=True|ExpandPort=False|ExpandSheetNum=True|ExpandDocNum=True|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0|DocumentPath=[Project Physical Documents]
 OutputType2=ExportSTEP
@@ -67,7 +67,7 @@ OutputEnabled2_OutputMedium5=0
 OutputEnabled2_OutputMedium6=0
 OutputDefault2=0
 Configuration2_Name1=OutputConfigurationParameter1
-Configuration2_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=False|IncludeElectricalPadHoles=False|IncludeFreePadHoles=False|ExportFoldedBoard=True|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=1|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=False|DocumentPath=C:\Users\alfredo\Documents\Altium Projects\USB Relay\USB-SW.PcbDoc
+Configuration2_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=0|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=False|IncludeElectricalPadHoles=False|IncludeFreePadHoles=True|ExportFoldedBoard=False|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=0|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=False|IncludeCoverLayer=True|SkipFreeBodies=False|SkipHidden=False|DocumentPath=C:\Users\alfredo\Documents\Altium Projects\USB Relay\USB-SW.PcbDoc
 OutputType3=Design Rules Check
 OutputName3=Design Rules Check
 OutputCategory3=Validation
@@ -105,7 +105,7 @@ OutputDocumentPath5=Board Assembly.PCBDwf
 OutputVariantName5=
 OutputEnabled5=1
 OutputEnabled5_OutputMedium1=0
-OutputEnabled5_OutputMedium2=4
+OutputEnabled5_OutputMedium2=3
 OutputEnabled5_OutputMedium3=0
 OutputEnabled5_OutputMedium4=0
 OutputEnabled5_OutputMedium5=0
@@ -133,7 +133,7 @@ OutputDocumentPath7=Panel Dimensions.PCBDwf
 OutputVariantName7=
 OutputEnabled7=1
 OutputEnabled7_OutputMedium1=0
-OutputEnabled7_OutputMedium2=3
+OutputEnabled7_OutputMedium2=4
 OutputEnabled7_OutputMedium3=0
 OutputEnabled7_OutputMedium4=0
 OutputEnabled7_OutputMedium5=0
@@ -155,7 +155,7 @@ OutputEnabled8_OutputMedium6=0
 OutputDefault8=0
 PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 Configuration8_Name1=OutputConfigurationParameter1
-Configuration8_Item1=Record=ExportPDF3DSetting|Version=110|Format=0|Flags=8158|Scheme=0|ViewColorR0=255|ViewColorG0=255|ViewColorB0=255|ViewLignt0=9|ViewColorR1=255|ViewColorG1=255|ViewColorB1=255|ViewLignt1=9|ViewColorR2=255|ViewColorG2=255|ViewColorB2=255|ViewLignt2=9|ViewColorR3=255|ViewColorG3=255|ViewColorB3=255|ViewLignt3=9
+Configuration8_Item1=Record=ExportPDF3DSetting|Version=110|Format=0|Flags=8158|Scheme=2|ViewColorR0=255|ViewColorG0=255|ViewColorB0=255|ViewLignt0=9|ViewColorR1=255|ViewColorG1=255|ViewColorB1=255|ViewLignt1=9|ViewColorR2=255|ViewColorG2=255|ViewColorB2=255|ViewLignt2=9|ViewColorR3=255|ViewColorG3=255|ViewColorB3=255|ViewLignt3=9|DocumentPath=C:\Users\alfredo\Documents\Altium Projects\USB Relay\USB-SW.PcbDoc
 OutputType9=BOM_PartType
 OutputName9=BOM Complete
 OutputCategory9=Report
@@ -192,7 +192,7 @@ Configuration9_Item9=Line #=100|Comment=100|Description=100|Designator=100|Manuf
 [PublishSettings]
 OutputFilePath2=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\Drawings.pdf
 ReleaseManaged2=1
-OutputBasePath2=
+OutputBasePath2=Outputs
 OutputPathMedia2==ProjectCode
 OutputPathMediaValue2==ProjectCode
 OutputPathOutputer2=[Output Custom]
@@ -219,7 +219,7 @@ PDFACompliance2=Disabled
 PDFVersion2=Default
 OutputFilePath3=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 ReleaseManaged3=1
-OutputBasePath3=
+OutputBasePath3=Outputs
 OutputPathMedia3==ProjectCode
 OutputPathMediaValue3==ProjectCode
 OutputPathOutputer3=
@@ -259,7 +259,7 @@ OutputFileNameSpecial4=
 OpenOutput4=0
 OutputFilePath5=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
 ReleaseManaged5=1
-OutputBasePath5=
+OutputBasePath5=Outputs
 OutputPathMedia5==ProjectCode
 OutputPathMediaValue5==ProjectCode
 OutputPathOutputer5=
@@ -279,7 +279,7 @@ GenerateNetsInfo5=1
 MarkPins5=1
 MarkNetLabels5=1
 MarkPortsId5=1
-GenerateTOC5=1
+GenerateTOC5=0
 ShowComponentParameters5=1
 GlobalBookmarks5=0
 PDFACompliance5=Disabled
