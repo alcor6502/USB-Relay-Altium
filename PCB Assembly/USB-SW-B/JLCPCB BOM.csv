@@ -1,0 +1,32 @@
+Altium Designer Pick and Place Locations
+C:\Users\alfredo\AppData\Local\TempReleases\Snapshot\1\Assembly\USB-SW-B\JLCPCB BOM.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       15/02/25
+Time:       19:50
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+"Comment","Designator","Footprint"
+"100nF","C1","C0603-H90"
+"1uF","C2","C0603-H90"
+"1uF","C3","C0603-H90"
+"1uF","C4","C0603-H90"
+"MBR0530T1G","D1","SOD-323"
+"MBR0530T1G","D2","SOD-323"
+"USBLC6-4SC6","D3","SOT-236"
+"LTST-C191KRKT","LD1","LED-0603-R"
+"LTST-C191KGKT","LD2","LED-0603-G"
+"SKQMAQE010","PB1","SKQMA-SERIE"
+"BSS138-7-F","Q1","SOT-23"
+"10KR","R1","R0603-H55"
+"470R","R2","R0603-H55"
+"10KR","R4","R0603-H55"
+"470R","R5","R0603-H55"
+"470R","R6","R0603-H55"
+"10KR","R7","R0603-H55"
+"STM32F070F6P6","U1","TSSOP-20"
+"AP7313-33SRG-7","U2","SOT-23"
