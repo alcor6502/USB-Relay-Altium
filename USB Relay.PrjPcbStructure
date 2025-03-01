@@ -1,0 +1,3 @@
+Record=TopLevelDocument|FileName=Cover Page.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=Cover Page.SchDoc|Designator=MainSchematics|SchDesignator=MainSchematics|FileName=Main Schematics.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=Main Schematics.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Cover Page.SchDoc|Designator=RevisionHistory|SchDesignator=RevisionHistory|FileName=Revision History.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=Revision History.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

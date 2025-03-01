@@ -1,0 +1,167 @@
+[OutputJobFile]
+Version=1.0
+Caption=
+Description=
+VaultGUID=
+ItemGUID=
+ItemHRID=
+RevisionGUID=
+RevisionId=
+VaultHRID=
+AutoItemHRID=
+NextRevId=
+FolderGUID=
+LifeCycleDefinitionGUID=
+RevisionNamingSchemeGUID=
+
+[OutputGroup1]
+Name=Assembly.OutJob
+Description=
+TargetOutputMedium=Files
+VariantName=All Interfaces
+VariantScope=2
+CurrentConfigurationName=
+TargetPrinter=Microsoft Print to PDF
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputMedium1=Print Job
+OutputMedium1_Type=Printer
+OutputMedium1_Printer=PDFCreator
+OutputMedium1_PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputMedium2=Drawings
+OutputMedium2_Type=Publish
+OutputMedium3=Files
+OutputMedium3_Type=GeneratedFiles
+OutputType1=PDF3D
+OutputName1=Board 3D
+OutputCategory1=Documentation
+OutputDocumentPath1=Board.PcbDoc
+OutputVariantName1=
+OutputEnabled1=0
+OutputEnabled1_OutputMedium1=0
+OutputEnabled1_OutputMedium2=1
+OutputEnabled1_OutputMedium3=0
+OutputDefault1=0
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration1_Name1=OutputConfigurationParameter1
+Configuration1_Item1=Record=ExportPDF3DSetting|Version=110|Format=0|Flags=8158|Scheme=0|ViewColorR0=255|ViewColorG0=255|ViewColorB0=255|ViewLignt0=9|ViewColorR1=255|ViewColorG1=255|ViewColorB1=255|ViewLignt1=9|ViewColorR2=255|ViewColorG2=255|ViewColorB2=255|ViewLignt2=9|ViewColorR3=255|ViewColorG3=255|ViewColorB3=255|ViewLignt3=9
+OutputType2=PCBDrawing
+OutputName2=Board Assembly
+OutputCategory2=Documentation
+OutputDocumentPath2=Board Assembly.PCBDwf
+OutputVariantName2=
+OutputEnabled2=0
+OutputEnabled2_OutputMedium1=0
+OutputEnabled2_OutputMedium2=2
+OutputEnabled2_OutputMedium3=0
+OutputDefault2=0
+PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType3=Pick Place
+OutputName3=Pick and Place
+OutputCategory3=Assembly
+OutputDocumentPath3=Board.PcbDoc
+OutputVariantName3=All Interfaces
+OutputEnabled3=1
+OutputEnabled3_OutputMedium1=0
+OutputEnabled3_OutputMedium2=0
+OutputEnabled3_OutputMedium3=1
+OutputDefault3=0
+Configuration3_Name1=OutputConfigurationParameter1
+Configuration3_Item1=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=True|GenerateTextFormat=False|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=False|Filter=(Mount = 'Surface Mount')|FilterActive=True|YFlip=False|DifferentFootprints=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:Ascending,SortIndex:0,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:False,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:4|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:False,Sort:None,Position:5|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:6|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:2|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:3|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:Frequency,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23,Type:0|Column#18=Name:ComponentLink1URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18,Type:0|Column#19=Name:ComponentLink2URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20,Type:0|Column#20=Name:Capacitance,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16,Type:0|Column#21=Name:Voltage Rating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29,Type:0|Column#22=Name:Mount,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26,Type:0|Column#23=Name:Resistance,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27,Type:0|Column#24=Name:Current Rating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21,Type:0|Column#25=Name:ComponentLink2Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19,Type:0|Column#26=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28,Type:0|Column#27=Name:ComponentLink1Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17,Type:0|Column#28=Name:Manufacturer,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24,Type:0|Column#29=Name:Dielectric,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22,Type:0|Column#30=Name:Manufacturer Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25,Type:0|Column#31=Name:Case,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30,Type:0|DocumentPath=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Board.PcbDoc
+OutputType4=BOM_PartType
+OutputName4=BOM Basic
+OutputCategory4=Report
+OutputDocumentPath4=[ActiveBOM Document]
+OutputVariantName4=
+OutputEnabled4=1
+OutputEnabled4_OutputMedium1=0
+OutputEnabled4_OutputMedium2=0
+OutputEnabled4_OutputMedium3=2
+OutputDefault4=0
+PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration4_Name1=ColumnNameFormat
+Configuration4_Item1=CaptionAsName
+Configuration4_Name2=General
+Configuration4_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=True|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=2|FormWidth=1457|FormHeight=860|SupplierProdQty=10|SupplierAutoQty=False|SupplierUseCachedPricing=True|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration4_Name3=GroupOrder
+Configuration4_Item3=Supplier 1=True|Manufacturer Part Number=True
+Configuration4_Name4=OutputConfigurationParameter1
+Configuration4_Item4=??
+Configuration4_Name5=SortOrder
+Configuration4_Item5=Line #=Up
+Configuration4_Name6=VisibleOrder
+Configuration4_Item6=Line #=100|Designator=100|Manufacturer Part Number 1=176|Quantity=100|Description=367|Manufacturer 1=100|Supplier 1=100|Mount=100
+Configuration4_Name7=VisibleOrder_Base
+Configuration4_Item7=Line #=100|Designator=100|Manufacturer Part Number 1=176|Quantity=100|Description=367|Manufacturer 1=100|Supplier 1=100|Mount=100
+Configuration4_Name8=VisibleOrder_Consolidated
+Configuration4_Item8=Line #=100|Comment=100|Description=367|Designator=100|Manufacturer 1=100|Quantity=100|Manufacturer Part Number 1=145|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100|Quantity@All Interfaces=100|Price@All Interfaces=100
+Configuration4_Name9=VisibleOrder_Flat
+Configuration4_Item9=Line #=100|Comment=100|Designator=100|Manufacturer 1=100|Description=367|Manufacturer Part Number 1=145|Manufacturer Lifecycle 1=100|Supplier 1=100|Supplier Part Number 1=100|Supplier Unit Price 1=100|Supplier Subtotal 1=100
+OutputType5=Pick Place
+OutputName5=JLCPCB BOM
+OutputCategory5=Assembly
+OutputDocumentPath5=Board.PcbDoc
+OutputVariantName5=
+OutputEnabled5=1
+OutputEnabled5_OutputMedium1=0
+OutputEnabled5_OutputMedium2=0
+OutputEnabled5_OutputMedium3=3
+OutputDefault5=0
+Configuration5_Name1=OutputConfigurationParameter1
+Configuration5_Item1=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=True|GenerateTextFormat=False|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=False|Filter=(Mount = 'Surface Mount')|FilterActive=True|YFlip=False|DifferentFootprints=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:Ascending,SortIndex:0,Position:1|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:False,Sort:None,Position:3|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:Mount,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27,Type:0|Column#18=Name:ComponentLink2URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21,Type:0|Column#19=Name:ComponentLink1URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19,Type:0|Column#20=Name:Manufacturer,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25,Type:0|Column#21=Name:Capacitance,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16,Type:0|Column#22=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29,Type:0|Column#23=Name:Dielectric,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23,Type:0|Column#24=Name:Case,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17,Type:0|Column#25=Name:Resistance,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28,Type:0|Column#26=Name:ComponentLink1Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18,Type:0|Column#27=Name:Voltage Rating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30,Type:0|Column#28=Name:Current Rating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22,Type:0|Column#29=Name:Frequency,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24,Type:0|Column#30=Name:ComponentLink2Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20,Type:0|Column#31=Name:Manufacturer Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26,Type:0|DocumentPath=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Board.PcbDoc
+
+[PublishSettings]
+OutputFilePath2=Z:\Projects\SuperCap UPS Ras Pi - 485 - Rev B\Outputs\SCP-PI-485-B\
+ReleaseManaged2=1
+OutputBasePath2=Outputs
+OutputPathMedia2==ProjectCode
+OutputPathMediaValue2==ProjectCode
+OutputPathOutputer2=
+OutputPathOutputerPrefix2=
+OutputPathOutputerValue2=Drawings
+OutputFileName2=LCD Zone Controller V2R1.PDF
+OutputFileNameMulti2==OutputName
+UseOutputNameForMulti2=0
+OutputFileNameSpecial2=
+OpenOutput2=0
+PromptOverwrite2=0
+PublishMethod2=1
+ZoomLevel2=50
+FitSCHPrintSizeToDoc2=1
+FitPCBPrintSizeToDoc2=1
+GenerateNetsInfo2=1
+MarkPins2=1
+MarkNetLabels2=1
+MarkPortsId2=1
+GenerateTOC2=1
+ShowComponentParameters2=1
+GlobalBookmarks2=0
+PDFACompliance2=Disabled
+PDFVersion2=Default
+OutputFilePath3=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
+ReleaseManaged3=1
+OutputBasePath3=Outputs
+OutputPathMedia3==ProjectCode
+OutputPathMediaValue3==ProjectCode
+OutputPathOutputer3=
+OutputPathOutputerPrefix3=
+OutputPathOutputerValue3==ProjectCode
+OutputFileName3=
+OutputFileNameMulti3==OutputName
+UseOutputNameForMulti3=0
+OutputFileNameSpecial3=
+OpenOutput3=0
+
+[GeneratedFilesSettings]
+RelativeOutputPath2=Z:\Projects\SuperCap UPS Ras Pi - 485 - Rev B\Outputs\SCP-PI-485-B\
+OpenOutputs2=0
+RelativeOutputPath3=C:\Users\alfredo\Documents\Altium Projects\USB Relay\Outputs\USB-SW-B\
+OpenOutputs3=0
+AddToProject3=0
+TimestampFolder3=0
+UseOutputName3=0
+OpenODBOutput3=0
+OpenGerberOutput3=0
+OpenNCDrillOutput3=0
+OpenIPCOutput3=0
+EnableReload3=0
+
