@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Board.PcbDoc   01/03/2025  16:55:58
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : USB-SW-A-RoundHoles.TXT
+ASCII SlotHoles File : USB-SW-A-SlotHoles.TXT
+EIA File   : USB-SW-A.DRL
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.3mm)                                             Round             25        PTH        2.86inch (72.56mm)
+T2      28mil (0.7mm)                                             Round             4         PTH        0.72inch (18.38mm)
+T3      39mil (1mm)                                               Round             12        PTH        2.06inch (52.34mm)
+T4      39mil (1mm)                                               Slot              2         PTH        1.01inch (25.69mm)
+T5      43mil (1.1mm)                                             Round             2         NPTH       0.18inch (4.50mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              45
+
+Two holes at same point : 2
+-----------------------
+509,445
+509,145
+
+Total Processing Time (hh:mm:ss) : 00:00:00
