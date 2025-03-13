@@ -1,3 +1,15 @@
+Altium Designer Pick and Place Locations
+C:\Users\alfredo\AppData\Local\TempReleases\Snapshot\1\Assembly\USB-SW-A\Pick and Place.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       13/03/25
+Time:       17:19
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
 "Designator","Center-X(mm)","Center-Y(mm)","Layer","Rotation"
 "C1","20.0000","9.4000","TopLayer","0"
 "C2","20.0000","11.1000","TopLayer","0"
