@@ -1,0 +1,244 @@
+<h2><strong>All Started With A Simple USB-Controlled Relay</strong></h2>
+
+<p>This project started because of a simple need: a small USB-powered board designed to control a relay. The idea was straightforward: plug it into a computer, send a command through a virtual COM port and the relay would switch. That was all I needed at the time.</p>
+
+
+<p>It worked, but I felt like the board had so much more potential: why stop at just a relay? What if this board could do more? If I was already controlling something over USB, could I also drive a fan? Or control a servo? What if it could double as a UART interface and make this board configurable?</p>
+
+
+<p>Instead of fabricating different PCBs for each task, I explored a simpler approach: using solder bridges as configuration options. By adding or removing specific components, the same board could serve multiple applications.</p>
+
+
+<h2><strong>Solder Bridges: Unlocking Different Functionalities</strong></h2>
+
+
+<p>With the addition of solder jumpers, I defined six different board configurations, depending on what components were installed and which solder bridges were shorted:</p>
+
+
+<p><strong>1. Standard Relay Mode (The Original Design)</strong><br>🔹 Install J1 (screw terminal) and K1 (relay)<br>🔹 Remove J2 (fan header) and R3 (10K pull-up resistor)<br>🔹 Behavior: The board switches a relay via USB commands.</p>
+
+
+<p><strong>2. Solid-State Relay (SSR) Mode</strong>
+<br>🔹 Short B6<br>🔹 Install J1 (screw terminal), but now it outputs 5V for an SSR.<br>🔹 Remove J2 (fan header) and R3 (10K pull-up resistor)<br>🔹 Behavior: Similar to option 1, but the relay provides a switched 5V between Pin 2 and GND.</p>
+
+
+<p><strong>3. Simple Fan Control (2- or 3-Pin Fan)</strong><br>🔹 Install J2 (fan header)<br>🔹 Short B4<br>🔹 Remove J1, K1, and R3<br>🔹 Behavior: The board powers a 2- or 3-pin fan, speed by PWM signal applied to power pin.</p>
+
+
+<p><strong>4. PWM Fan Control (4-Pin Fan)</strong>
+<br>🔹 Short B5<br>🔹 Install J2 (fan header) and R3 (10K resistor, placed in the relay coil holes)<br>🔹 Remove J1 & K1<br>🔹 Behavior: Speed control by PWM signal applied to Pin4 (PWM input).</p>
+
+
+<p><strong>5. Servo Motor Control</strong>
+<br>🔹 Short B5 & B1<br>🔹 Install J2 (connected as a servo header instead of a fan header)<br>🔹 Remove J1, K1, and R3<br>🔹 Behavior: TIM2 generates servo control PWM (50Hz, 1-2ms pulse widths).</p>
+
+
+<p><strong>6. UART Communication Interface</strong>
+<br>🔹 Short B2 & B3<br>🔹 Install J1 (now acting as a UART terminal block)<br>🔹 Remove J2 & K1<br>🔹 Behavior: J1 now provides TX and RX pins for serial communication.</p>
+
+
+<h2><strong><br>USB Timing Without an External Crystal</strong></h2>
+
+
+<p>Most USB-enabled microcontrollers use a 12MHz crystal to ensure accurate timing, but the STM32F070F6P6 offer an alternative approach, it can self-synchronize using its internal RC oscillator.</p>
+
+
+<p>How USB Self-Synchronization Works</p>
+
+
+<ul><li>In USB Full-Speed mode (12Mbps), the host sends a Start Of Frame (SOF) packet every 1 millisecond.</li><li>The STM32 can use these SOF packets to continuously fine-tune its internal oscillator, keeping everything synced.</li><li>This eliminates the need for an external quartz crystal, reducing component count while maintaining USB timing accuracy.</li></ul>
+
+
+<p>This meant I could simplify the design even further while ensuring stable USB communication.</p>
+
+
+<h2><strong><br>Generating PWM for Fans and Servos Using TIM2</strong></h2>
+
+
+<p>Since fan and servo control was now a feature, I needed a way to generate precise PWM signals dynamically. The STM32's TIM2 hardware timer was the perfect solution."</p>
+
+
+<p>For 4-pin fans, a 25kHz PWM signal was needed to control their speed. For servo motors, the standard is 50Hz, with a duty cycle that determines the servo’s position (1ms = 0°, 2ms = 180°).</p>
+
+
+<p>The microcontroller dynamically reconfigures TIM2 depending on which function is in use.</p>
+
+
+<h2><strong><br>One Input: RPM Sensing and External Monitoring</strong></h2>
+
+
+<p>I also wanted a way to receive feedback from the devices connected to the board. I added a single input, primarily used to monitor fan RPM signals (for 3 and 4 pins PWM fans).<br>This input has:</p>
+
+
+<ul><li>A default 5V pull-up resistor (10KΩ, R1)</li><li>A Schottky diode for protection</li></ul>
+
+
+<p>Why a Schottky diode? Because it has a lower forward voltage drop (~0.2V-0.3V) compared to regular diodes (~0.7V), ensuring a reliable LOW level when reading signals.</p>
+
+
+<p>If a user needs to connect a higher voltage pull-up, they can remove R1, and the diode will still prevent excessive voltage from reaching the STM32.</p>
+
+
+<h2><strong><br>A Smart Dual-Purpose Tactile Switch</strong></h2>
+
+
+<p>One key design choice in this board was the dual-function tactile switch connected to the BOOT0 pin of the STM32F070F6P6. This small addition serves two completely different purposes, making the board both easier to use and more compact.</p>
+
+
+<h3><strong>1. Entering Bootloader Mode (Firmware Update Without a Programmer)</strong></h3>
+
+
+<p>When the switch is pressed while plugging in the USB cable, it forces the STM32 into built-in bootloader mode. This enables firmware updates directly over USB, without requiring an external programmer.</p>
+
+
+<p>This works because of the way the BOOT0 pin functions in STM32 microcontrollers:</p>
+
+
+<ul><li>If BOOT0 = LOW at startup, the STM32 runs its main firmware stored in Flash.</li><li>If BOOT0 = HIGH, the STM32 runs its internal bootloader, allowing users to upload new firmware via USB or UART.</li></ul>
+
+
+<p>This means no additional programming interface is needed on the PCB, saving board space and simplifying the hardware. To update the software, all that's needed is pressing the button while plugging into the computer USB, and flash new firmware using software like STM32CubeProgrammer or dfu-util.</p>
+
+
+<h3><strong>2. Manual Override – Toggling the Output</strong></h3>
+
+
+<p>In normal operation (when the STM32 is already running its firmware), pressing the same switch toggles the output state. This provides a simple manual way to turn a relay or fan on and off, without needing a USB command.</p>
+
+
+<p>This is possible because once the STM32 is running its main firmware, the BOOT0 pin is no longer needed as an input for boot selection. Instead of leaving it unused, the firmware repurposes BOOT0 as a general-purpose input, detecting button presses to change the output state.</p>
+
+
+<h2><strong><br>Detailed Explanation of the Schematic</strong></h2>
+
+
+<p>I'll break down the schematic into the following detailed sections:</p>
+
+
+<h3><strong>Power Supply and Voltage Regulation</strong></h3>
+
+
+<ul><li>The board is powered via USB (J3), which provides +5V.</li><li>U2 (AP7313-33SRG-7) is a 3.3V linear regulator, which steps down 5V to power the STM32.</li><li>Capacitors (C1-C4) act as decoupling capacitors to stabilize power and filter noise.</li><li>The STM32F070F6P6 is powered at 3.3V (VDD → U1 Pin 16).</li></ul>
+
+
+<h3><strong>USB Communication & ESD Protection</strong></h3>
+
+
+<ul><li>The USBLC6-4SC6 (D3) protects USB D+ (PA12) and D- (PA11) lines from electrostatic discharge (ESD).</li><li>USB D+ and D- are directly connected to the STM32’s PA12 and PA11, respectively.</li></ul>
+
+
+<h3><strong>Relay Control Circuit</strong></h3>
+
+
+<ul><li>PA1 (GPIO output) controls the relay via the MOSFET (Q1).</li><li>When PA1 is HIGH, the MOSFET allows current to flow, energizing the relay coil.</li><li>Relay output terminals (J1) switch an external circuit when the relay is activated.</li><li>The 10KΩ resistor (R4) ties the gate of the MOSFET to ground.</li><li>The 470Ω resistor (R2) limits the gate current.</li></ul>
+
+
+<h3><strong>UART Communication (Optional Feature)</strong></h3>
+
+
+<ul><li>When B2 & B3 are shorted, PA2 and PA3 function as a UART TX/RX interface, enabling serial communication.</li></ul>
+
+
+<h2><strong><br>Firmware Overview</strong></h2>
+
+
+<p>This firmware enables a USB-controlled multi-purpose board, designed around the STM32F070F6P6 microcontroller. The board supports various functionalities, such as relay switching, PWM fan control, servo motor control, RPM measurement, and UART communication, all configurable via commands sent over USB.<br>The firmware operates in a main loop with event-based handling, where commands received from USB trigger changes in hardware peripherals. It consists of several key modules, each with a specific function:</p>
+
+
+<h3><strong>Main Execution Loop (Real-Time Event Handling)</strong></h3>
+
+
+<p>After initialization, the firmware enters an infinite loop, where it continuously processes events.</p>
+
+
+<ul><li>UpdateLeds(); Checks relay/PWM state and updates LED indicators accordingly.</li><li>CheckButton(); Reads the manual button state, handling debounce logic and toggling outputs if pressed.</li><li>CheckDelays(); Handles timing-based events, such as:<ul><li>Pulse duration management (turning relay off after a timed pulse).</li><li>USB command response transmission timing (to avoid flooding USB).</li><li>RPM update calculations (executed every second).</li></ul></li></ul>
+
+
+<p>This entire loop executes in a non-blocking manner, ensuring the USB interface remains responsive while real-time tasks (PWM generation, RPM counting) continue running.</p>
+
+
+<h3><strong>Interrupt-Driven RPM Counting (Tachometer Callback)</strong></h3>
+
+
+<p>The RPM measurement system uses a GPIO interrupt to increment a pulse counter each time a tachometer signal from the fan is detected. The callback interrupt function:</p>
+
+
+<pre class="hljs cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">HAL_GPIO_EXTI_Callback</span><span class="hljs-params">(<span class="hljs-keyword">uint16_t</span> GPIO_Pin)</span> </span>{
+    TachIncrement();
+}</pre>
+
+
+<p>Whenever a fan tach pulse is received, this function TachIncrement() to increase the counter asynchronously.</p>
+
+
+<p>Later, every one second, the pulse count is used to calculate and update the fan’s RPM. Using an interrupt ensures accurate RPM measurement without requiring CPU-intensive polling.</p>
+
+
+<h3><strong>USB Communication & Command Parser</strong></h3>
+
+
+<p>The firmware uses USB CDC (Communications Device Class) to create a virtual COM port, allowing a computer to send ASCII-formatted commands (e.g., from a terminal or script).<br>A buffer (cmdBuf) stores incoming characters until a complete command is received ( Start "#" and Stop "!" characters). Once a full command is detected, it is interpreted and executed within CmdParse().</p>
+
+
+<p>Commands follow a structured format:</p>
+
+
+<ul><li>"#"	Command prefix</li>
+<li>"!"	Command suffix</li>
+<li>"S"	Switch command - accepted values 1 (on) or 0 (off) Example: - "#S1!" (Switch on the relay)</li><li> "P"	Pulse command - accepted values 1 to 9 (100 msec multiples) - Example: "#P3!" (Pulse for 300 msec)</li>
+<li>"F" Fan control command - accepted values 0 to 100 - Example: "#F90!" (Fan on at 90% PWM)</li>
+<li>"W" PWM control command (B2 Closed) - accepted values 0 to 100 - Example: "#F90!" (Fan on at 90%)</li>
+<li>"I"	Input line read - Example: "#I!" (Return the status of the input)</li><li>"T"	Tach line read - Example: "#T!" (Return the rotation per minute of the fan)</li>
+<li>"O"	Duty cycle PWM read - Example: "#O!" (Return the PWM value of the output)</li>
+<li>"Z"	Output PWM Frequency - accepted values 10 to 48000 - Example: "#F90!" (Fan on at 90% PWM)</li><li>"A"	Servo mode - accepted values 0 to 200 - Example: "#A75!" servo at 0 Degree</li>
+<li>To send a command in BASH: echo -e "#S1!" &gt; /dev/serial/by-id/usb-IT_Logic_USB_Relay-if00</li>
+<li>To read a result in BASH:  read -d'~' -t1 INPUT &lt; /dev/serial/by-id/usb-IT_Logic_USB_Relay-if00</li></ul>
+
+
+<p>If the command requires a response, the result is stored in txBuf and sent over USB.</p>
+
+
+<h3><strong><br>Non-Blocking Timing & Event Handling</strong></h3>
+
+
+<p>All timing is handled via "CheckDelays()" using a millisecond timestamps from "HAL_GetTick()", making execution event-driven and efficient.</p>
+
+
+<table><thead><tr><th>Action
+
+</th><th>Condition
+
+</th><th>Handling Function
+
+</th></tr></thead><tbody><tr><td>Debounce Manual Button
+</td><td><code class="codespan cursor-pointer">HAL_GetTick() &gt;= debounceStop</code>
+</td><td>CheckButton()
+</td></tr><tr><td>Relay Pulse Duration
+</td><td><code class="codespan cursor-pointer">HAL_GetTick() &gt;= pulseStop</code>
+</td><td>Auto-Turn OFF
+</td></tr><tr><td>RPM Calculation
+</td><td><code class="codespan cursor-pointer">HAL_GetTick() &gt;= rpmNextCalc</code>
+</td><td>Updates rpmMinute
+</td></tr><tr><td>Delayed USB Transmission
+</td><td><code class="codespan cursor-pointer">HAL_GetTick() &gt;= sendTxBufStart</code>
+</td><td>CDC_Transmit_FS()
+</td></tr></tbody></table>
+
+
+<h2><strong><br>Final Thoughts: Minimal Parts, Maximum Versatility</strong></h2>
+
+
+<p>This small USB relay board turned into a multi-purpose control interface, thanks to:</p>
+
+
+<ul><li>Adaptive configuration via solder bridges</li><li>Cost-saving USB synchronization (no crystal required)</li><li>A single button that doubles as a firmware flasher and manual toggle</li></ul>
+
+
+<p>The best part? It’s simple to build and customize.</p>
+
+
+<h2><strong><br>What Would You Add?</strong></h2>
+
+
+<p>This project opens up many possibilities for hardware hackers.
+<br>What mods or improvements would you make? Share your thoughts in the comments!</p>

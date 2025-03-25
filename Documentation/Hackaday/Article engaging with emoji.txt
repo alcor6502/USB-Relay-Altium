@@ -1,0 +1,194 @@
+<h2>🔥 One USB Relay Board, Many Uses – Thanks to Solder Bridges</h2>
+
+<h3><strong>From a Simple Relay to a Multi-Purpose Control Board</strong></h3>
+
+
+<p>Ever needed a quick way to control a relay over USB? That’s how this project started:<br>A simple relay board that was supposed to "just work."</p>
+
+
+<p>But then I thought... why stop at just a relay?<br>💡 What if I could drive a fan, control a servo, or even use it as a UART interface?</p>
+
+
+<p>Instead of designing multiple PCBs, what if a single board could adapt using just solder bridges?<br>That’s exactly what I built. 💪</p>
+
+
+<h2>🔧 One PCB, Many Uses: The Power of Solder Bridges</h2>
+
+
+<p>Instead of fabricating a different PCB for every task, I decided to go modular.</p>
+
+
+<p>By adding or removing a few key components and shorting specific solder jumpers, the same board can function in six different modes:<br>(💡 Short = connect with solder)</p>
+
+
+<h3><strong>1️⃣ Standard Relay Mode (The Original Design)</strong></h3>
+
+
+<p>✔ Install: J1 (screw terminal) and K1 (relay)<br>❌ Remove: J2 (fan header) and R3 (10K pull-up resistor)<br>⚙ Behavior: The board switches a relay via USB commands.</p>
+
+
+<h3><strong>2️⃣ Solid-State Relay (SSR) Mode</strong></h3>
+
+
+<p>✔ Short: B6<br>✔ Install: J1 (screw terminal, now outputting 5V for SSR)<br>❌ Remove: J2 and R3<br>⚙ Behavior: Like option 1, but instead of a mechanical relay, it provides a switched 5V between Pin 2 and GND.</p>
+
+
+<h3><strong>3️⃣ Simple Fan Control (2- or 3-Pin Fan)</strong></h3>
+
+
+<p>✔ Install: J2 (fan header)<br>✔ Short: B4<br>❌ Remove: J1, K1, and R3<br>⚙ Behavior: The board powers a 2- or 3-pin fan with PWM speed control applied to the power pin.</p>
+
+
+<h3><strong>4️⃣ PWM Fan Control (4-Pin Fan)</strong></h3>
+
+
+<p>✔ Short: B5<br>✔ Install: J2 (fan header) and R3 (10K resistor in relay coil holes)<br>❌ Remove: J1 and K1<br>⚙ Behavior: Speed control by PWM on Pin 4 (PWM input).</p>
+
+
+<h3><strong>5️⃣ Servo Motor Control</strong></h3>
+
+
+<p>✔ Short: B5 & B1<br>✔ Install: J2 (wired as a servo header)<br>❌ Remove: J1, K1, and R3<br>⚙ Behavior: TIM2 generates servo control PWM (50Hz, 1-2ms pulse width).</p>
+
+
+<h3><strong>6️⃣ UART Communication Interface</strong></h3>
+
+
+<p>✔ Short: B2 & B3<br>✔ Install: J1 (now a UART terminal block)<br>❌ Remove: J2 & K1<br>⚙ Behavior: J1 now provides TX/RX pins for serial communication.</p>
+
+
+<h2>⏳ Ditching the Crystal: How USB Syncs Itself</h2>
+
+
+<p>Most USB-enabled microcontrollers require a crystal (typically 12MHz) for accurate timing.</p>
+
+
+<p>But here’s the cool part:<br>⚡ The STM32F070F6P6 doesn’t need one. It can self-synchronize using its internal RC oscillator.</p>
+
+
+<h3><strong>How USB Self-Synchronization Works</strong></h3>
+
+
+<p>🔹 USB Full-Speed mode (12Mbps): The host sends a Start Of Frame (SOF) pulse every 1ms.<br>🔹 The STM32 uses these pulses to fine-tune its internal oscillator.<br>🔹 This eliminates the need for an external crystal, reducing component count without losing accuracy.</p>
+
+
+<p>That means fewer parts, lower cost, and easier assembly. 🎉</p>
+
+
+<h2>🎛️ Generating PWM for Fans & Servos with TIM2</h2>
+
+
+<p>With fan and servo control becoming a feature, I needed precise PWM signals on the fly.</p>
+
+
+<p>The solution? The STM32's TIM2 hardware timer.</p>
+
+
+<h3><strong>🔹 PWM Outputs</strong></h3>
+
+
+<ul><li>25 kHz PWM → Controls 4-pin fans (standard frequency for PC cooling fans)</li><li>50 Hz PWM → Controls servo motors (1ms = 0°, 2ms = 180°)</li></ul>
+
+
+<p>The microcontroller dynamically reconfigures TIM2 depending on the mode. 💡</p>
+
+
+<h2>🎯 One Input, Two Uses: Fan RPM & External Sensors</h2>
+
+
+<p>To track fan speed (RPM) and possibly other sensor data, I added a single input pin.</p>
+
+
+<h3><strong>✔ Features</strong></h3>
+
+
+<p>⚙ Default 5V pull-up resistor (10KΩ, R1)<br>⚙ Schottky diode protection (lower voltage drop = more reliable LOW signals)</p>
+
+
+<p>💡 If you need a higher voltage pull-up, simply remove R1&mdash;the diode still prevents overvoltage damage.</p>
+
+
+<h2>🛠️ The Magic Button: One Switch, Two Tricks</h2>
+
+
+<p>One of my favorite design choices was a dual-purpose tactile switch connected to the BOOT0 pin.</p>
+
+
+<p>✔ 🔹 Feature 1: Enter Bootloader Mode (Firmware Update)
+Hold the button while plugging in USB → The STM32 enters bootloader mode.<br>Now you can flash firmware over USB, no programmer needed! 🥳</p>
+
+
+<p>✔ 🔹 Feature 2: Manual Override (Toggle Outputs)
+When the STM32 is already running firmware, pressing the button toggles the relay or fan manually&mdash;without USB commands. 💡<br>⚡ Hack: BOOT0 is repurposed as a general-purpose input once firmware is running.</p>
+
+
+<h2>📜 USB Command Interface</h2>
+
+
+<p>The firmware uses USB CDC (Virtual COM Port) to communicate via serial commands:</p>
+
+
+<p>💻 Example Commands (Send via Terminal/Script)</p>
+
+
+<table><thead><tr><th>Command
+
+</th><th>Function
+
+
+</th></tr></thead><tbody><tr><td><code class="codespan cursor-pointer">#S1!</code>
+</td><td>Switch ON relay
+</td></tr><tr><td><code class="codespan cursor-pointer">#P3!</code>
+</td><td>Pulse relay for 300ms
+</td></tr><tr><td><code class="codespan cursor-pointer">#F90!</code>
+</td><td>Fan at 90% PWM
+</td></tr><tr><td><code class="codespan cursor-pointer">#A75!</code>
+</td><td>Servo at 0°
+</td></tr><tr><td><code class="codespan cursor-pointer">#T!</code>
+</td><td>Read fan RPM
+</td></tr><tr><td><code class="codespan cursor-pointer">#I!</code>
+</td><td>Read input pin state
+</td></tr></tbody></table>
+
+
+<p><br></p>
+
+
+<p><strong>🚀 Why?</strong></p>
+
+
+<ul><li>Accepts structured ASCII commands (easy to use in Bash, Python, Arduino, etc.)</li><li>Non-blocking timing ensures the USB interface stays responsive.</li></ul>
+
+
+<h2>📡 Full Firmware Overview</h2>
+
+
+<p>The firmware follows a real-time event-driven model:<br>1️⃣ Main Loop: Continuously listens for USB commands & button presses.<br>2️⃣ Interrupt Handlers: Detect tachometer pulses for accurate RPM tracking.<br>3️⃣ Non-Blocking Execution: Avoids unnecessary delays while handling PWM & I/O control.</p>
+
+
+<h3><strong>✔ Example: RPM Measurement via Interrupt</strong></h3>
+
+
+
+<pre data-language="cpp" class="hljs cpp"><strong class="save-code-button bg-none border-none bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 transition rounded-md px-1.5 py-0.5"><strong class="copy-code-button bg-none border-none bg-gray-50 hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800 transition rounded-md px-1.5 py-0.5"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">HAL_GPIO_EXTI_Callback</span><span class="hljs-params">(<span class="hljs-keyword">uint16_t</span> GPIO_Pin)</span> </span>{
+    TachIncrement(); <span class="hljs-comment">// Asynchronously detects tach pulses</span>
+}</strong></strong></pre>
+
+
+<p>Later, a timed event calculates RPM per second, ensuring accurate tracking.</p>
+
+
+<h2>🔚 Final Thoughts: Minimal Parts, Maximum Versatility</h2>
+
+
+<p>This small USB relay board turned into a multi-purpose control interface, thanks to:<br>✅ Adaptive configuration via solder bridges<br>✅ Cost-saving USB synchronization (no crystal!)<br>✅ One button, two functions: manual mode + firmware flashing</p>
+
+
+<p>💡 The best part? It’s dead simple to build and customize. 🔥</p>
+
+
+<h2>💬 What Would You Add?</h2>
+
+
+<p>This project opens up plenty of hacking possibilities |</p>
+
